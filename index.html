@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bookster — Performance Creative Adset // Q2 2026</title>
+  <title>Bookster — Performance Creative · Next Cycle</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reset.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,8 +11,8 @@
   <style>
     :root {
       --bk-bg: #141428; --bk-card: #1E1F39; --bk-card-dark: #0B0B1A;
-      --bk-purple: #8C81FF; --bk-purple-dim: rgba(140,129,255,0.14); --bk-purple-sh: #5C4DD1;
-      --bk-yellow: #FFCC00; --bk-yellow-dim: rgba(255,204,0,0.14); --bk-yellow-sh: #CD9302;
+      --bk-purple: #8C81FF; --bk-purple-dim: rgba(140,129,255,0.14);
+      --bk-yellow: #FFCC00; --bk-yellow-dim: rgba(255,204,0,0.14);
       --bk-text: #FFFFFF; --bk-text-2: #C9C9D6; --bk-text-3: #8F90A6;
       --bk-success: #4FC83D; --bk-error: #F25458; --bk-info: #0D99FF;
       --bk-border: rgba(255,255,255,0.08);
@@ -21,39 +21,36 @@
     .reveal-viewport { background: var(--bk-bg); }
     .reveal { font-family: var(--bk-b); background: var(--bk-bg); }
     .reveal .slides { text-align: left; }
-    .reveal .slides section { padding: 30px 52px; box-sizing: border-box; height: 100%; display: flex; flex-direction: column; }
+    .reveal .slides section { padding: 30px 52px; box-sizing: border-box; height: 100%; display: flex; flex-direction: column; overflow: hidden; }
     .reveal h1,.reveal h2,.reveal h3,.reveal h4 { font-family: var(--bk-h); font-weight: 600; color: var(--bk-text); text-align: left; text-transform: none; letter-spacing: -0.018em; margin: 0 0 .3em; }
     .reveal h1 { font-size: 2.4em; line-height: 1.05; }
     .reveal h2 { font-size: 1.45em; line-height: 1.15; }
-    .reveal h3 { font-size: 0.9em; font-weight: 600; color: var(--bk-text-2); }
-    .reveal p { color: var(--bk-text-2); font-size: .75em; line-height: 1.6; margin: 0; }
+    .reveal h3 { font-size: 0.95em; font-weight: 600; color: var(--bk-text-2); }
+    .reveal p { color: var(--bk-text-2); font-size: .78em; line-height: 1.6; margin: 0; }
     .reveal ul { margin: 0; padding: 0 0 0 1em; }
-    .reveal li { color: var(--bk-text-2); font-size: .72em; line-height: 1.65; margin-bottom: 2px; }
+    .reveal li { color: var(--bk-text-2); font-size: .74em; line-height: 1.7; margin-bottom: 3px; }
     .reveal a { color: var(--bk-purple); }
     .reveal .controls { color: var(--bk-purple); }
     .reveal .progress span { background: var(--bk-purple); }
     .reveal .slide-number { color: var(--bk-text-3); font-family: var(--bk-b); background: none; font-size: .55em; }
 
     .accent{color:var(--bk-purple)!important} .yellow{color:var(--bk-yellow)!important} .muted{color:var(--bk-text-3)!important} .ok{color:var(--bk-success)!important} .bad{color:var(--bk-error)!important} .info{color:var(--bk-info)!important}
-    .bold{font-weight:700!important} .sm{font-size:.7em!important} .xs{font-size:.58em!important}
+    .bold{font-weight:700!important} .sm{font-size:.72em!important} .xs{font-size:.6em!important}
 
     .slide-body { flex: 1; display: flex; flex-direction: column; min-height: 0; }
     .slide-row { display: flex; gap: 26px; align-items: stretch; flex: 1; min-height: 0; overflow: hidden; }
     .slide-col { display: flex; flex-direction: column; min-width: 0; min-height: 0; overflow: hidden; }
-    .slide-col.left { flex: 1; gap: 10px; justify-content: flex-start; }
+    .slide-col.left { flex: 1; gap: 12px; justify-content: flex-start; }
     .slide-col.right { flex: 1; gap: 10px; align-items: stretch; justify-content: flex-start; }
-    .reveal .slides section { overflow: hidden; }
 
-    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
-    .g4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+    .g4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
 
     .eyebrow { font-family: var(--bk-b); font-size: .55em; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--bk-purple); margin-bottom: 4px; display: block; }
-    .eyebrow-y { color: var(--bk-yellow); }
-    .eyebrow-g { color: var(--bk-success); }
-    .eyebrow-i { color: var(--bk-info); }
+    .eyebrow-y { color: var(--bk-yellow); } .eyebrow-g { color: var(--bk-success); } .eyebrow-i { color: var(--bk-info); }
 
-    .card { background: var(--bk-card); border: 1px solid var(--bk-border); border-radius: 12px; padding: 14px 18px; }
+    .card { background: var(--bk-card); border: 1px solid var(--bk-border); border-radius: 12px; padding: 16px 20px; }
     .card-dark { background: var(--bk-card-dark); }
     .card-purple { background: var(--bk-purple-dim); border-color: rgba(140,129,255,.28); }
     .card-yellow { background: var(--bk-yellow-dim); border-color: rgba(255,204,0,.28); }
@@ -61,30 +58,41 @@
     .card-red { background: rgba(242,84,88,.08); border-color: rgba(242,84,88,.25); }
     .card-info { background: rgba(13,153,255,.08); border-color: rgba(13,153,255,.25); }
 
-    .badge { display: inline-block; padding: 3px 9px; border-radius: 20px; font-size: .55em; font-weight: 600; font-family: var(--bk-b); letter-spacing: .06em; text-transform: uppercase; }
-    .badge-vid { background: var(--bk-yellow-dim); color: var(--bk-yellow); border: 1px solid rgba(255,204,0,.3); }
-    .badge-static { background: var(--bk-purple-dim); color: var(--bk-purple); border: 1px solid rgba(140,129,255,.3); }
-    .badge-ugc { background: rgba(79,200,61,.12); color: var(--bk-success); border: 1px solid rgba(79,200,61,.3); }
-    .badge-irl { background: rgba(13,153,255,.12); color: var(--bk-info); border: 1px solid rgba(13,153,255,.3); }
-    .badge-top { background: rgba(255,204,0,.16); color: var(--bk-yellow); border: 1px solid rgba(255,204,0,.36); font-weight: 700; }
+    /* Concept header — unified grid replacing scattered track bar + eyebrow + badges */
+    .c-head { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; padding: 8px 14px; border-radius: 7px; margin-bottom: 14px; }
+    .c-head.keep { background: rgba(79,200,61,.08); border-left: 3px solid var(--bk-success); }
+    .c-head.human { background: rgba(140,129,255,.1); border-left: 3px solid var(--bk-purple); }
+    .c-head.behavioral { background: rgba(255,204,0,.08); border-left: 3px solid var(--bk-yellow); }
+    .c-head .ch-l { display: flex; align-items: center; gap: 7px; font-family: var(--bk-b); font-size: .66em; color: var(--bk-text-2); }
+    .c-head .ch-l .d { font-size: 1.3em; line-height: 1; }
+    .c-head .ch-l strong { font-weight: 700; }
+    .c-head .ch-r { font-family: var(--bk-b); font-size: .62em; color: var(--bk-text-3); display: flex; align-items: center; gap: 8px; }
+    .c-head .ch-r strong { color: var(--bk-text); font-weight: 600; }
+    .c-head .ch-r .sep { color: rgba(255,255,255,.2); }
 
-    .chips { display: flex; gap: 4px; flex-wrap: wrap; margin: 4px 0 4px; }
-    .chip { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: .55em; font-weight: 500; font-family: var(--bk-b); background: var(--bk-card); color: var(--bk-text-2); border: 1px solid var(--bk-border); }
+    /* 3-cell concept metadata row */
+    .c-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin: 8px 0 14px; background: var(--bk-border); border-radius: 8px; overflow: hidden; }
+    .c-meta-cell { display: flex; flex-direction: column; gap: 3px; padding: 9px 14px; background: var(--bk-card-dark); }
+    .c-meta-cell .l { font-family: var(--bk-b); font-size: .5em; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--bk-text-3); }
+    .c-meta-cell .v { font-family: var(--bk-b); font-size: .68em; color: var(--bk-text); font-weight: 500; line-height: 1.35; }
 
+    /* Production note */
+    .prod-note { margin-top: auto; padding: 12px 16px; background: var(--bk-card-dark); border: 1px solid var(--bk-border); border-radius: 10px; font-family: var(--bk-b); font-size: .68em; color: var(--bk-text-2); line-height: 1.55; }
+    .prod-note .lbl { font-size: .82em; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--bk-purple); margin-bottom: 5px; display: block; }
+    .prod-note strong { color: var(--bk-text); font-weight: 600; }
+
+    /* Tagline + table */
     .tagline-big { font-family: var(--bk-h); font-size: 1.55em; font-weight: 700; color: var(--bk-text); line-height: 1.15; margin: 8px 0 14px; }
     .tbl { display: grid; grid-template-columns: 86px 1fr; gap: 14px 16px; align-items: baseline; }
     .tlbl { font-family: var(--bk-b); font-size: .62em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--bk-text-3); padding-top: 3px; }
     .tval { font-family: var(--bk-b); font-size: .88em; color: var(--bk-text-2); line-height: 1.6; }
 
-    /* Ad mock — sized to fit slide height budget */
+    /* Ad mock — same budget model as before */
     .ad-mock { border: 1px solid var(--bk-border); border-radius: 10px; overflow: hidden; background: var(--bk-card-dark); display: flex; flex-direction: column; box-shadow: 0 4px 18px rgba(0,0,0,.3); }
     .ad-mock.primary { width: 100%; max-width: 230px; align-self: center; flex-shrink: 0; }
     .ad-mock.primary.r9-16 { aspect-ratio: 9 / 16; }
     .ad-mock.primary.r1-1 { aspect-ratio: 1 / 1; max-width: 320px; }
     .ad-mock.primary.r4-5 { aspect-ratio: 4 / 5; max-width: 280px; }
-    /* Variants share a unified max-height (150px) so any combination of aspect ratios renders at the same vertical extent.
-       Widths derive from aspect ratio. This keeps the variant row aligned and predictable in total content height.
-       Budget math: primary 9:16 at 230 wide = 409 tall. 409 + 15 cap + 10 gap + 150 variant + 15 cap = 599px (fits 620px slide row). */
     .ad-mock.variant { width: 100%; flex-shrink: 0; }
     .ad-mock.variant.r9-16 { aspect-ratio: 9 / 16; max-height: 150px; max-width: 85px; }
     .ad-mock.variant.r1-1 { aspect-ratio: 1 / 1; max-height: 150px; max-width: 150px; }
@@ -98,100 +106,45 @@
     .variant-row { display: flex; gap: 12px; align-items: flex-start; justify-content: center; }
     .variant-row > div { display: flex; flex-direction: column; align-items: center; min-width: 0; }
 
-    /* Storyboard strip on concept slides */
-    .sb-strip { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; width: 100%; }
-    .sb-mini { background: var(--bk-card-dark); border: 1px solid var(--bk-border); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
-    .sb-mini-vis { height: 72px; background: linear-gradient(135deg, #08081a 0%, var(--bk-card-dark) 100%); display: flex; align-items: center; justify-content: center; font-family: var(--bk-b); font-size: .55em; color: var(--bk-text-3); text-align: center; padding: 5px; line-height: 1.35; }
-    .sb-mini-cap { padding: 5px 8px; font-family: var(--bk-b); font-size: .5em; color: var(--bk-text-2); border-top: 1px solid var(--bk-border); }
-    .sb-mini-cap .t { color: var(--bk-purple); font-weight: 700; }
-
-    .tbl-data { width: 100%; border-collapse: collapse; font-family: var(--bk-b); font-size: .62em; }
-    .tbl-data th { background: var(--bk-card); color: var(--bk-text-3); font-weight: 600; padding: 6px 9px; text-align: left; font-size: .8em; letter-spacing: .05em; text-transform: uppercase; border-bottom: 1px solid var(--bk-border); }
-    .tbl-data td { padding: 6px 9px; color: var(--bk-text-2); border-bottom: 1px solid rgba(255,255,255,.04); vertical-align: top; }
-    .tbl-data tr:last-child td { border-bottom: none; }
-    .tbl-data td:first-child { color: var(--bk-text); font-weight: 600; }
-
-    .cover-wrap { display: flex; flex-direction: column; justify-content: center; height: 100%; }
-    .cover-bolt { font-size: 2.4em; margin-bottom: 8px; display: block; }
-    .cover-sup { font-family: var(--bk-b); font-size: .58em; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--bk-purple); margin-bottom: 6px; }
-    .cover-title { font-size: 2.7em; font-weight: 700; line-height: 1.02; margin: 0 0 12px; }
-    .cover-sub { font-family: var(--bk-b); font-size: .78em; color: var(--bk-text-2); margin-bottom: 0; line-height: 1.55; }
-    .cover-foot { position: absolute; bottom: 22px; left: 52px; right: 52px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--bk-border); padding-top: 10px; }
-    .cover-foot span { font-family: var(--bk-b); font-size: .55em; color: var(--bk-text-3); }
-
-    .beat-row { display: flex; gap: 8px; align-items: stretch; margin-top: 8px; }
-    .beat-box { flex: 1; padding: 10px 12px; background: var(--bk-card); border-radius: 8px; border: 1px solid var(--bk-border); }
-    .beat-label { font-family: var(--bk-b); font-size: .52em; font-weight: 700; color: var(--bk-yellow); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 3px; }
-    .beat-name { font-family: var(--bk-b); font-size: .68em; font-weight: 600; color: var(--bk-text); margin-bottom: 2px; }
-    .beat-eg { font-family: var(--bk-b); font-size: .55em; color: var(--bk-text-3); font-style: italic; }
-    .beat-arrow { display: flex; align-items: center; color: var(--bk-text-3); font-size: 1.2em; flex-shrink: 0; }
-
-    .gate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
-    .gate-card { padding: 10px 14px; border-radius: 8px; background: var(--bk-purple-dim); border: 1px solid rgba(140,129,255,.25); }
-    .gate-n { font-family: var(--bk-b); font-size: .54em; font-weight: 700; color: var(--bk-purple); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
-    .gate-q { font-family: var(--bk-b); font-size: .72em; font-weight: 600; color: var(--bk-text); line-height: 1.3; }
-
+    /* Stats */
     .stat-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-top: 12px; }
-    .stat { padding: 28px 14px; background: var(--bk-card); border: 1px solid var(--bk-border); border-radius: 12px; text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
-    .stat-num { font-family: var(--bk-h); font-size: 2em; font-weight: 700; color: var(--bk-text); line-height: 1; margin: 0; }
+    .stat { padding: 26px 14px; background: var(--bk-card); border: 1px solid var(--bk-border); border-radius: 12px; text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+    .stat-num { font-family: var(--bk-h); font-size: 1.9em; font-weight: 700; color: var(--bk-text); line-height: 1; margin: 0; }
     .stat-num.y { color: var(--bk-yellow); } .stat-num.p { color: var(--bk-purple); } .stat-num.g { color: var(--bk-success); } .stat-num.r { color: var(--bk-error); }
     .stat-lbl { font-family: var(--bk-b); font-size: .56em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--bk-text-2); margin: 0; }
     .stat-sub { font-family: var(--bk-b); font-size: .5em; color: var(--bk-text-3); margin: 0; line-height: 1.4; }
 
-    .track-header { display: flex; align-items: center; gap: 8px; padding: 3px 10px; border-radius: 5px; margin-bottom: 2px; }
-    .track-header.aspirational { background: rgba(79,200,61,.08); border-left: 3px solid var(--bk-success); }
-    .track-header.openlane { background: rgba(140,129,255,.1); border-left: 3px solid var(--bk-purple); }
-    .track-header.format { background: rgba(255,204,0,.08); border-left: 3px solid var(--bk-yellow); }
-    .track-header.premium { background: rgba(13,153,255,.08); border-left: 3px solid var(--bk-info); }
-    .track-header.secondary { background: rgba(255,204,0,.05); border-left: 3px solid rgba(255,204,0,.4); }
-    .track-name { font-family: var(--bk-h); font-size: .58em; font-weight: 600; color: var(--bk-text); letter-spacing: .04em; }
-    .track-tag { font-family: var(--bk-b); font-size: .42em; color: var(--bk-text-3); margin-left: auto; }
+    /* Cover */
+    .cover-wrap { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+    .cover-bolt { font-size: 2.4em; margin-bottom: 8px; display: block; }
+    .cover-sup { font-family: var(--bk-b); font-size: .58em; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--bk-purple); margin-bottom: 6px; }
+    .cover-title { font-size: 2.7em; font-weight: 700; line-height: 1.02; margin: 0 0 12px; }
+    .cover-sub { font-family: var(--bk-b); font-size: .78em; color: var(--bk-text-2); margin-bottom: 0; line-height: 1.55; max-width: 720px; }
+    .cover-foot { position: absolute; bottom: 22px; left: 52px; right: 52px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--bk-border); padding-top: 10px; }
+    .cover-foot span { font-family: var(--bk-b); font-size: .55em; color: var(--bk-text-3); }
+
+    /* Tracks intro grid */
+    .track-card { display: flex; flex-direction: column; padding: 18px 20px; border-radius: 10px; }
+    .track-card.keep { background: rgba(79,200,61,.08); border-left: 3px solid var(--bk-success); }
+    .track-card.human { background: rgba(140,129,255,.1); border-left: 3px solid var(--bk-purple); }
+    .track-card.behavioral { background: rgba(255,204,0,.08); border-left: 3px solid var(--bk-yellow); }
+    .track-card .t-eb { font-family: var(--bk-b); font-size: .52em; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--bk-text-3); margin-bottom: 4px; }
+    .track-card .t-eb.ok { color: var(--bk-success); }
+    .track-card .t-eb.accent { color: var(--bk-purple); }
+    .track-card .t-eb.yellow { color: var(--bk-yellow); }
+    .track-card h3 { font-size: 1.05em; color: var(--bk-text); margin-bottom: 8px; }
+    .track-card .desc { font-family: var(--bk-b); font-size: .66em; color: var(--bk-text-2); line-height: 1.55; }
+    .track-card .meta { margin-top: auto; padding-top: 12px; font-family: var(--bk-b); font-size: .55em; color: var(--bk-text-3); display: flex; justify-content: space-between; }
+    .track-card .meta strong { font-weight: 700; }
 
     .glow { background: radial-gradient(ellipse at 72% 15%, rgba(92,77,209,.18) 0%, transparent 55%); }
 
-    /* Script block for UGC concepts */
-    .script-blk { display: grid; grid-template-columns: 68px 1fr; gap: 7px 12px; align-items: baseline; padding: 12px 14px; background: var(--bk-card-dark); border: 1px solid var(--bk-border); border-radius: 10px; flex: 1; }
-    .script-t { font-family: var(--bk-b); font-size: .58em; color: var(--bk-yellow); font-weight: 700; font-variant-numeric: tabular-nums; padding-top: 2px; letter-spacing: .03em; }
-    .script-l { font-family: var(--bk-b); font-size: .72em; color: var(--bk-text-2); line-height: 1.55; }
-    .script-l strong { color: var(--bk-text); font-weight: 600; }
-
-    /* Legend grid */
-    .legend { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-top: 8px; }
-    .legend-col { background: var(--bk-card-dark); border: 1px solid var(--bk-border); border-radius: 8px; padding: 8px 12px; }
-    .legend-head { font-family: var(--bk-b); font-size: .55em; font-weight: 700; color: var(--bk-purple); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
-    .legend-row { font-family: var(--bk-b); font-size: .58em; color: var(--bk-text-2); line-height: 1.5; margin-bottom: 2px; }
-    .legend-row strong { color: var(--bk-text); font-weight: 600; }
-
-    /* Unified concept header — grid layout replacing scattered track bar + eyebrow + badges */
-    .c-head { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; padding: 8px 14px; border-radius: 7px; margin-bottom: 14px; }
-    .c-head.aspirational { background: rgba(79,200,61,.08); border-left: 3px solid var(--bk-success); }
-    .c-head.openlane { background: rgba(140,129,255,.1); border-left: 3px solid var(--bk-purple); }
-    .c-head.format { background: rgba(255,204,0,.08); border-left: 3px solid var(--bk-yellow); }
-    .c-head.premium { background: rgba(13,153,255,.08); border-left: 3px solid var(--bk-info); }
-    .c-head .ch-l { display: flex; align-items: center; gap: 7px; font-family: var(--bk-b); font-size: .66em; color: var(--bk-text-2); }
-    .c-head .ch-l .d { font-size: 1.3em; line-height: 1; }
-    .c-head .ch-l strong { font-weight: 700; }
-    .c-head .ch-r { font-family: var(--bk-b); font-size: .62em; color: var(--bk-text-3); display: flex; align-items: center; gap: 8px; }
-    .c-head .ch-r strong { color: var(--bk-text); font-weight: 600; }
-    .c-head .ch-r .sep { color: rgba(255,255,255,.2); }
-
-    /* Three-cell concept metadata row — Format / Platforms / Audience */
-    .c-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin: 8px 0 14px; background: var(--bk-border); border-radius: 8px; overflow: hidden; }
-    .c-meta-cell { display: flex; flex-direction: column; gap: 3px; padding: 9px 14px; background: var(--bk-card-dark); }
-    .c-meta-cell .l { font-family: var(--bk-b); font-size: .5em; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--bk-text-3); }
-    .c-meta-cell .v { font-family: var(--bk-b); font-size: .68em; color: var(--bk-text); font-weight: 500; line-height: 1.35; }
-
-    /* Production note card — fills bottom of left col on static concept slides */
-    .prod-note { margin-top: auto; padding: 12px 16px; background: var(--bk-card-dark); border: 1px solid var(--bk-border); border-radius: 10px; font-family: var(--bk-b); font-size: .68em; color: var(--bk-text-2); line-height: 1.55; }
-    .prod-note .lbl { font-size: .82em; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--bk-purple); margin-bottom: 5px; display: block; }
-    .prod-note strong { color: var(--bk-text); font-weight: 600; }
-
-    /* Premium A/B */
-    .exec-split { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    .exec-box { padding: 10px 12px; background: var(--bk-card); border: 1px solid var(--bk-border); border-radius: 8px; }
-    .exec-tag { font-family: var(--bk-b); font-size: .54em; font-weight: 700; color: var(--bk-info); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 3px; }
-    .exec-name { font-family: var(--bk-h); font-size: .8em; font-weight: 600; color: var(--bk-text); margin-bottom: 4px; }
-    .exec-body { font-family: var(--bk-b); font-size: .6em; color: var(--bk-text-2); line-height: 1.5; }
+    /* Performance list (keep/kill) */
+    .perf-row { display: flex; align-items: center; padding: 8px 12px; border-radius: 6px; margin-bottom: 4px; font-family: var(--bk-b); font-size: .72em; }
+    .perf-row.keep { background: rgba(79,200,61,.06); border-left: 2px solid var(--bk-success); }
+    .perf-row.kill { background: rgba(242,84,88,.06); border-left: 2px solid var(--bk-error); }
+    .perf-row .perf-name { color: var(--bk-text); font-weight: 600; flex: 1; }
+    .perf-row .perf-stat { color: var(--bk-text-3); font-size: .85em; }
   </style>
 </head>
 <body>
@@ -203,282 +156,146 @@
   <div class="cover-wrap">
     <span class="cover-bolt">⚡</span>
     <div class="cover-sup">Bookster.ai × 36 North</div>
-    <h1 class="cover-title">Performance Creative<br><span class="accent">Adset</span></h1>
-    <p class="cover-sub">Q2 2026 &nbsp;·&nbsp; 10 concepts across 4 tracks<br>Built on live account performance and category analysis</p>
+    <h1 class="cover-title">Performance Creative<br><span class="accent">Next Cycle</span></h1>
+    <p class="cover-sub">Recommendations for the next 14 days. Where we are with the live spend, what's working in market, and three creative directions I'd like to put to the test alongside the Apple Search keyword work.</p>
   </div>
-  <div class="cover-foot"><span>Prepared by Victor Freyre &nbsp;//&nbsp; 36 North</span><span>May 2026</span></div>
+  <div class="cover-foot"><span>Prepared by Michael Allen &nbsp;·&nbsp; 36 North</span><span>May 2026</span></div>
 </section>
 
-<!-- SLIDE 02 — THE DATA -->
+<!-- SLIDE 02 — WHERE WE ARE -->
 <section data-background-color="#141428">
-  <span class="eyebrow eyebrow-g">Performance &nbsp;//&nbsp; May 2026</span>
-  <h2>What's working and what we cannot see yet</h2>
+  <span class="eyebrow">Status</span>
+  <h2>Where we are — and how to read the numbers</h2>
+  <div class="slide-body">
+    <div class="g2" style="margin-top:14px;">
+      <div class="card card-yellow">
+        <div class="eyebrow eyebrow-y" style="margin-bottom:6px;">Live spend posture</div>
+        <p class="sm"><strong style="color:var(--bk-text);">Meta + TikTok at 50% reduced spend since May 15.</strong> Defensive measure during the iOS attribution failure. The cost of continuing one more week is bounded and known. The cost of pausing is unbounded — we lose algorithm momentum and creative learnings we can't get back. Apple Search continues at full spend.</p>
+      </div>
+      <div class="card card-green">
+        <div class="eyebrow eyebrow-g" style="margin-bottom:6px;">Clean read</div>
+        <p class="sm"><strong style="color:var(--bk-text);">Apple Search is the only platform with intact attribution and real install volume.</strong> 17 installs Wk 1, 26 installs Wk 2. Click-to-install rate at 15.12% — healthy. Channel is doing the heavy lifting while attribution is recovered.</p>
+      </div>
+    </div>
+    <div class="card card-dark" style="margin-top:12px;">
+      <p class="sm muted">Of course, a caveat on Meta and TikTok numbers this cycle: we're making <strong style="color:var(--bk-text);">top of funnel assumptions on a bottom of funnel campaign</strong>. iOS attribution is broken until Singular is removed from Meta Business Manager. Treat the CTRs and engagement signals as encouraging — but the install volume on those two platforms isn't stable truth yet. Apple Search is the read we trust.</p>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <div class="eyebrow" style="margin-bottom:6px;">What's resolved this week</div>
+      <ul>
+        <li>SKAdNetwork postback config corrected (May 15) — Nico</li>
+        <li>ATE race condition + AttributionCopyEndpoint shipped (May 15) — Nico</li>
+        <li>Facebook connection added in Adjust under your account (May 18)</li>
+        <li>SKAN connection + partner parameters enabled (May 19)</li>
+        <li>Drew (external mobile dev) onboarded for Frida-level debugging (May 19)</li>
+        <li>Adjust access requested to investigate iOS App Verification = Unavailable flag (May 20)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 03 — PERFORMANCE -->
+<section data-background-color="#141428">
+  <span class="eyebrow eyebrow-g">Performance · Weeks 1–2</span>
+  <h2>What's working and what we'd cut</h2>
   <div class="slide-body">
     <div class="stat-grid">
-      <div class="stat"><div class="stat-num y">$10.08</div><div class="stat-lbl">Young Pro CPA</div><div class="stat-sub">Apple Search · vs $75 target</div></div>
-      <div class="stat"><div class="stat-num g">3.08%</div><div class="stat-lbl">Best Meta CTR</div><div class="stat-sub">"Turn Content Into Growth" · vs 1.50% benchmark</div></div>
-      <div class="stat"><div class="stat-num p">$3.93</div><div class="stat-lbl">TikTok CPM (Young Pro)</div><div class="stat-sub">4× cheaper than Meta</div></div>
-      <div class="stat"><div class="stat-num r">17</div><div class="stat-lbl">Apple Search installs</div><div class="stat-sub">on $224 spend · 15.12% click-to-install</div></div>
+      <div class="stat"><div class="stat-num g">26</div><div class="stat-lbl">Apple installs Wk 2</div><div class="stat-sub">15.12% click-to-install</div></div>
+      <div class="stat"><div class="stat-num y">$17.17</div><div class="stat-lbl">Young Pro Apple CPI</div><div class="stat-sub">above $2.50–$4.25 benchmark</div></div>
+      <div class="stat"><div class="stat-num g">3.08%</div><div class="stat-lbl">Best Meta CTR</div><div class="stat-sub">"Turn Content Into Growth" · Young Pro · vs 1.50% benchmark</div></div>
+      <div class="stat"><div class="stat-num p">$0</div><div class="stat-lbl">New UGC commission</div><div class="stat-sub">held until data is conclusive</div></div>
     </div>
-    <div class="g2" style="margin-top:14px;">
-      <div class="card card-green">
-        <div class="eyebrow eyebrow-g" style="margin-bottom:6px;">Top performer right now</div>
-        <p style="font-size:.78em;color:var(--bk-text);font-weight:600;margin-bottom:6px;">"Learning Has Changed. You Can Keep Up."</p>
-        <p class="sm muted">Group 2 Side-Hustlers / Plasma Sellers persona. The only creative producing both installs and a trial start in the most recent read. Hook: <em>"Every successful idea you've had started from something you read and forgot."</em> The angle is working because it names the reality without preaching. Young Pro Customers respond to it more clearly than HISI in every available report.</p>
+    <div class="g2" style="margin-top:14px;flex:1;gap:14px;">
+      <div class="card">
+        <div class="eyebrow eyebrow-g" style="margin-bottom:8px;">Keep — performing well</div>
+        <div class="perf-row keep"><span class="perf-name">Learning Has Changed</span><span class="perf-stat">only Meta static with installs + trial start</span></div>
+        <div class="perf-row keep"><span class="perf-name">Knowledge That Sticks</span><span class="perf-stat">strongest CTR HISI since launch</span></div>
+        <div class="perf-row keep"><span class="perf-name">Turn Content Into Growth</span><span class="perf-stat">3.08% CTR Young Pro · best engagement in account</span></div>
+        <div class="perf-row keep"><span class="perf-name">Make Spare Time Work For You</span><span class="perf-stat">2.49% CTR Young Pro</span></div>
+        <p class="xs muted" style="margin-top:8px;">These four are the proven base. Refresh in-house, extend into the next cycle.</p>
       </div>
-      <div class="card card-red">
-        <div class="eyebrow" style="color:var(--bk-error);margin-bottom:6px;">What we cannot see yet</div>
-        <p class="sm">iOS install data on Meta and TikTok is unreliable until Singular is removed from Meta Business Manager. The platform is routing attribution callbacks to a partner endpoint that's no longer responding, so the actual install volume is hidden. Recommendation: treat Meta and TikTok numbers as engagement and click efficiency only, not as conversion read, until Adjust escalates and Singular is cleared.</p>
+      <div class="card">
+        <div class="eyebrow" style="color:var(--bk-error);margin-bottom:8px;">Kill — appropriate spend, weak hook</div>
+        <div class="perf-row kill"><span class="perf-name">Get More Than Just The Gist</span><span class="perf-stat">poor CTR · poor hook</span></div>
+        <div class="perf-row kill"><span class="perf-name">Learn Faster Win Faster</span><span class="perf-stat">poor CTR · same call</span></div>
+        <p class="xs muted" style="margin-top:8px;">Both had appropriate levels of spend. We've seen what they're going to do. Replacing them with new statics next cycle.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SLIDE 04 — THREE CREATIVE DIRECTIONS -->
+<section data-background-color="#141428">
+  <span class="eyebrow">Next Cycle</span>
+  <h2>Three creative directions, plus the Apple Search work</h2>
+  <div class="slide-body">
     <div class="g3" style="margin-top:14px;flex:1;align-items:stretch;">
-      <div class="card" style="display:flex;flex-direction:column;justify-content:space-between;">
-        <div>
-          <div class="eyebrow" style="margin-bottom:6px;">What we recommend this cycle</div>
-          <p class="sm">Bias <strong style="color:var(--bk-text);">70% of spend to Young Pro Customers</strong>. Extend "Learning Has Changed" as the lead creative. Layer in two whitespace concepts no competitor is using.</p>
-        </div>
-        <p class="xs muted" style="margin-top:8px;font-style:italic;">Track 01 leads spend at 50%.</p>
+      <div class="track-card keep">
+        <div class="t-eb ok">Track A · 50% of spend</div>
+        <h3>Extend what's working</h3>
+        <p class="desc">Refresh the three winning statics and the Turn-Content-Into-Growth UGC. Same audiences, same hooks, fresh executions. Lowest risk, highest confidence — this is the base.</p>
+        <div class="meta"><span>3 concepts</span><strong class="ok">Meta · IG Feed</strong></div>
       </div>
-      <div class="card" style="display:flex;flex-direction:column;justify-content:space-between;">
-        <div>
-          <div class="eyebrow eyebrow-g" style="margin-bottom:6px;">What we're scaling</div>
-          <p class="sm"><strong style="color:var(--bk-text);">Apple Search</strong> is our ground truth this cycle at $10.08 CPA on Young Pro — 5.7× better than the $75 target. Scale through keyword pruning, not budget alone.</p>
-        </div>
-        <p class="xs muted" style="margin-top:8px;font-style:italic;">17 installs on $224 spend.</p>
+      <div class="track-card human">
+        <div class="t-eb accent">Track B · 30% of spend</div>
+        <h3>Human-layer statics (new)</h3>
+        <p class="desc">Three new statics leveraging the human layer instead of the Bookie mascot. Text-conversation overlays, lived-in iPhone photos, sticky-note marginalia. Less polished — more believable. The direction I'd like to test next.</p>
+        <div class="meta"><span>3 new concepts</span><strong class="accent">Meta · IG Feed · Apple Display</strong></div>
       </div>
-      <div class="card" style="display:flex;flex-direction:column;justify-content:space-between;">
-        <div>
-          <div class="eyebrow eyebrow-y" style="margin-bottom:6px;">What we're unblocking</div>
-          <p class="sm"><strong style="color:var(--bk-text);">Singular removal from Meta BM</strong> is the unblock for trustworthy Meta + TikTok iOS data. Drew + Victor coordinating with Adjust escalation.</p>
-        </div>
-        <p class="xs muted" style="margin-top:8px;font-style:italic;">Once cleared, TikTok iOS budget unlocks.</p>
+      <div class="track-card behavioral">
+        <div class="t-eb yellow">Track C · 15% of spend</div>
+        <h3>Behavioral direction test</h3>
+        <p class="desc">Two motion-graphic concepts in the behavioral / loss-aversion register. Small allocation, fair test of the alternate creative direction we've been discussing. We'll know inside two weeks whether the data warrants leaning further into it.</p>
+        <div class="meta"><span>2 concepts</span><strong class="yellow">Meta + TikTok motion only</strong></div>
       </div>
+    </div>
+    <div class="card card-dark" style="margin-top:12px;">
+      <p class="sm"><strong style="color:var(--bk-text);">Plus 5% reserved for Apple Search keyword expansion.</strong> No new ad creative on that channel — it's keyword pruning and tagline A/B work, but it's where the installs are coming from this cycle, so it gets its own dedicated focus on slide 15.</p>
     </div>
   </div>
 </section>
 
-<!-- SLIDE 03 — STRATEGIC POSITION -->
-<section data-background-color="#141428">
-  <span class="eyebrow">Approach</span>
-  <h2>Four creative tracks for the next 14 days</h2>
-  <div class="slide-body">
-    <div class="g4" style="margin-top:12px;flex:1;min-height:0;align-items:stretch;grid-template-rows:1fr;">
-      <div class="card card-green" style="display:flex;flex-direction:column;min-height:0;">
-        <div class="eyebrow eyebrow-g">Track 01</div>
-        <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">Aspirational Loss-Aversion</h3>
-        <p class="xs" style="font-size:.62em;line-height:1.55;">Extends what's already working. "Learning Has Changed" plus two related angles. Highest confidence track for this cycle.</p>
-        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(79,200,61,.18);">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:6px;">Concepts in track</div>
-          <div style="font-family:var(--bk-b);font-size:.58em;color:var(--bk-text-2);line-height:1.7;">
-            <div>01 · Learning Has Changed v2 <span class="ok">●</span></div>
-            <div>02 · Knowledge That Sticks v2</div>
-            <div>03 · Turn Content Into Growth</div>
-          </div>
-        </div>
-        <div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(79,200,61,.12);">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:4px;">Win condition</div>
-          <div style="font-family:var(--bk-b);font-size:.6em;color:var(--bk-text-2);line-height:1.5;">Beat current control by 2× CPI. Read at Day 14.</div>
-        </div>
-        <div style="margin-top:auto;padding-top:10px;">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);">Spend share</div>
-          <div class="ok bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">50%</div>
-        </div>
-      </div>
-      <div class="card card-purple" style="display:flex;flex-direction:column;min-height:0;">
-        <div class="eyebrow">Track 02</div>
-        <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">Open Lanes</h3>
-        <p class="xs" style="font-size:.62em;line-height:1.55;">Three places no competitor is currently playing. Headway never shows book content; bookmark-as-graveyard is novel; in-house "Stop Scrolling" replaces a higher-scope script.</p>
-        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(140,129,255,.2);">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:6px;">Concepts in track</div>
-          <div style="font-family:var(--bk-b);font-size:.58em;color:var(--bk-text-2);line-height:1.7;">
-            <div>04 · Bookmark Trap</div>
-            <div>05 · Insight-First Reveal</div>
-            <div>06 · Stop Scrolling (in-house)</div>
-          </div>
-        </div>
-        <div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(140,129,255,.14);">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:4px;">Win condition</div>
-          <div style="font-family:var(--bk-b);font-size:.6em;color:var(--bk-text-2);line-height:1.5;">Beat control 1.5× — novel-angle bonus on engagement signal.</div>
-        </div>
-        <div style="margin-top:auto;padding-top:10px;">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);">Spend share</div>
-          <div class="accent bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">25%</div>
-        </div>
-      </div>
-      <div class="card card-yellow" style="display:flex;flex-direction:column;min-height:0;">
-        <div class="eyebrow eyebrow-y">Track 03</div>
-        <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">TikTok-Native</h3>
-        <p class="xs" style="font-size:.62em;line-height:1.55;">Built for the 21–34 second sweet spot. Includes a creator POV reveal, a low-cost text-only motion graphic, and a creator-led gamification piece.</p>
-        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,204,0,.2);">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:6px;">Concepts in track</div>
-          <div style="font-family:var(--bk-b);font-size:.58em;color:var(--bk-text-2);line-height:1.7;">
-            <div>07 · POV Reveal</div>
-            <div>08 · 2am Address</div>
-            <div>09 · Get Paid</div>
-          </div>
-        </div>
-        <div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(255,204,0,.14);">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:4px;">Win condition</div>
-          <div style="font-family:var(--bk-b);font-size:.6em;color:var(--bk-text-2);line-height:1.5;">≥ 30% hook rate at 2s · ≥ 15% hold at 5s on TikTok.</div>
-        </div>
-        <div style="margin-top:auto;padding-top:10px;">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);">Spend share</div>
-          <div class="yellow bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">20%</div>
-        </div>
-      </div>
-      <div class="card card-info" style="display:flex;flex-direction:column;min-height:0;">
-        <div class="eyebrow eyebrow-i">Track 04</div>
-        <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">Premium-Intelligent</h3>
-        <p class="xs" style="font-size:.62em;line-height:1.55;">Blinkist has effectively stopped Meta ads. The "intelligent companion" lane they owned is open. One concept, two A/B executions to test positioning vs. anti-AI moat with HISI.</p>
-        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(13,153,255,.2);">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:6px;">Concepts in track</div>
-          <div style="font-family:var(--bk-b);font-size:.58em;color:var(--bk-text-2);line-height:1.7;">
-            <div>10A · Intelligent Companion</div>
-            <div>10B · Curated by Humans</div>
-          </div>
-        </div>
-        <div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(13,153,255,.14);">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:4px;">Win condition</div>
-          <div style="font-family:var(--bk-b);font-size:.6em;color:var(--bk-text-2);line-height:1.5;">+15% branded search lift on HISI. Read at Day 21 (slower brand metric).</div>
-        </div>
-        <div style="margin-top:auto;padding-top:10px;">
-          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);">Spend share</div>
-          <div class="info bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">5%</div>
-        </div>
-      </div>
-    </div>
-    <div class="card card-dark" style="margin-top:10px;">
-      <p class="sm muted"><strong style="color:var(--bk-text);">Unifying approach across all tracks:</strong> point at the behavior, not the person. "Learning Has Changed. You Can Keep Up." is the registered tone — direct without being preachy. Every concept in this set tests that line at a different volume. The current account winner is Side-Hustlers persona on Group 2 (Young Pro Customers) — we weight 70% of spend there.</p>
-    </div>
-  </div>
-</section>
+<!-- ━━━━━━━━━━━ TRACK A — Extend what's working ━━━━━━━━━━━ -->
 
-<!-- SLIDE 04 — THE APPROACH -->
-<section data-background-color="#141428">
-  <span class="eyebrow">Creative System</span>
-  <h2>Four tests every concept must pass</h2>
-  <div class="slide-body">
-    <div class="gate-grid">
-      <div class="gate-card"><div class="gate-n">Test 01</div><div class="gate-q">Would this stop someone scrolling at 1am?</div></div>
-      <div class="gate-card"><div class="gate-n">Test 02</div><div class="gate-q">Does the viewer feel pointed at, not flattered?</div></div>
-      <div class="gate-card"><div class="gate-n">Test 03</div><div class="gate-q">Is the promise disproportionate enough to feel worth trying?</div></div>
-      <div class="gate-card"><div class="gate-n">Test 04</div><div class="gate-q">Does the resolution land in under 8 seconds?</div></div>
-    </div>
-    <div class="beat-row">
-      <div class="beat-box"><div class="beat-label">Beat 01</div><div class="beat-name">Name the reality</div><div class="beat-eg">"You bookmarked 1,400 things. You read 4."</div></div>
-      <div class="beat-arrow">→</div>
-      <div class="beat-box"><div class="beat-label">Beat 02</div><div class="beat-name">Self-attribution</div><div class="beat-eg">Point at the behavior, not the person</div></div>
-      <div class="beat-arrow">→</div>
-      <div class="beat-box"><div class="beat-label">Beat 03</div><div class="beat-name">Disproportionate escape</div><div class="beat-eg">"15 minutes. You can still keep up."</div></div>
-    </div>
-    <div class="card card-yellow" style="margin-top:10px;">
-      <p class="sm"><span class="yellow bold">⚡ Rule we added after the category review:</span> Show the actual book content where possible. Headway runs 50,000 ads per month and refuses to do this. It's their blind spot. Concepts 03 and 05 both lead with real book material on screen.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SLIDE 05 — PLATFORM ARCHITECTURE + LEGEND -->
-<section data-background-color="#141428">
-  <span class="eyebrow">Platform Architecture</span>
-  <h2>10 concepts · 4 tracks · 4 platforms</h2>
-  <div class="slide-body">
-    <table class="tbl-data" style="margin-top:6px;">
-      <thead><tr><th>#</th><th>Concept</th><th>Track</th><th>Format</th><th>Meta</th><th>TikTok</th><th>Apple S.</th><th>Audience</th></tr></thead>
-      <tbody>
-        <tr><td>01</td><td>Learning Has Changed v2 <span class="badge badge-top" style="margin-left:6px;">TOP MAY 13</span></td><td class="ok">Aspirational</td><td><span class="badge badge-static">Static</span></td><td class="ok">Primary</td><td class="ok">Primary</td><td>—</td><td>Young Pro</td></tr>
-        <tr><td>02</td><td>Knowledge That Sticks v2</td><td class="ok">Aspirational</td><td><span class="badge badge-static">Carousel</span></td><td class="ok">Primary</td><td class="muted">Sec</td><td>—</td><td>HISI</td></tr>
-        <tr><td>03</td><td>Turn Content Into Growth UGC</td><td class="ok">Aspirational</td><td><span class="badge badge-ugc">30s UGC</span></td><td class="ok">Primary</td><td class="ok">Primary</td><td>—</td><td>Young Pro</td></tr>
-        <tr><td>04</td><td>Bookmark Trap</td><td class="accent">Open Lane</td><td><span class="badge badge-static">Static + motion</span></td><td class="ok">Primary</td><td class="ok">Primary</td><td>—</td><td>Both</td></tr>
-        <tr><td>05</td><td>Insight-First Reveal</td><td class="accent">Open Lane</td><td><span class="badge badge-static">Static + motion</span></td><td class="ok">Primary</td><td class="ok">Primary</td><td class="ok">Display</td><td>Both</td></tr>
-        <tr><td>06</td><td>Stop Scrolling (in-house)</td><td class="accent">Open Lane</td><td><span class="badge badge-irl">30s IRL</span></td><td class="ok">Primary</td><td class="ok">Primary</td><td>—</td><td>Both</td></tr>
-        <tr><td>07</td><td>POV Reveal</td><td class="yellow">Format</td><td><span class="badge badge-ugc">30s UGC</span></td><td class="muted">Sec</td><td class="ok">Primary</td><td>—</td><td>Young Pro</td></tr>
-        <tr><td>08</td><td>2am Address</td><td class="yellow">Format</td><td><span class="badge badge-vid">15s motion</span></td><td class="ok">Primary</td><td class="ok">Primary</td><td>—</td><td>Both</td></tr>
-        <tr><td>09</td><td>Get Paid</td><td class="yellow">Format</td><td><span class="badge badge-ugc">30s UGC</span></td><td class="muted">Sec</td><td class="ok">Primary</td><td>—</td><td>Young Pro</td></tr>
-        <tr><td>10</td><td>Premium-Intelligent (A+B)</td><td class="info">Premium</td><td><span class="badge badge-static">Static A/B</span></td><td class="ok">Primary</td><td>—</td><td class="ok">Display</td><td>HISI</td></tr>
-      </tbody>
-    </table>
-    <div class="legend">
-      <div class="legend-col">
-        <div class="legend-head">Tracks</div>
-        <div class="legend-row"><strong class="ok">Aspirational</strong> Extend the angle already winning</div>
-        <div class="legend-row"><strong class="accent">Open Lane</strong> Mechanics no competitor is using</div>
-        <div class="legend-row"><strong class="yellow">Format</strong> Built for TikTok / IG Reels patterns</div>
-        <div class="legend-row"><strong class="info">Premium</strong> Blinkist's vacated brand lane</div>
-      </div>
-      <div class="legend-col">
-        <div class="legend-head">Formats</div>
-        <div class="legend-row"><strong>Static</strong> Single image, 1:1 / 4:5 / 9:16</div>
-        <div class="legend-row"><strong>Carousel</strong> Swipeable multi-image (Meta + IG)</div>
-        <div class="legend-row"><strong>Motion</strong> Animated text or small graphic, 5–15s</div>
-        <div class="legend-row"><strong>UGC</strong> Creator-filmed talking-head video</div>
-        <div class="legend-row"><strong>IRL</strong> Filmed in-house by 36N team</div>
-      </div>
-      <div class="legend-col">
-        <div class="legend-head">Audiences</div>
-        <div class="legend-row"><strong>Young Pro</strong> Group 2 — younger professionals, $9,750/mo budget</div>
-        <div class="legend-row"><strong>HISI</strong> Group 1 — High Intent Self-Improvers, $5,250/mo budget</div>
-        <div class="legend-row"><strong>Both</strong> Crossover concept, run in both adsets</div>
-      </div>
-      <div class="legend-col">
-        <div class="legend-head">Channels</div>
-        <div class="legend-row"><strong class="ok">Primary</strong> Optimized for this placement</div>
-        <div class="legend-row"><strong class="muted">Sec</strong> Secondary placement</div>
-        <div class="legend-row"><strong>Display</strong> Apple Search display ad placement</div>
-        <div class="legend-row"><strong>—</strong> Not running on this channel</div>
-      </div>
-    </div>
-    <p class="xs muted" style="margin-top:6px;"><span class="accent bold">Spend allocation:</span> 70% Young Pro Customers / 30% HISI based on May performance — Group 2 wins CTR, CPC, and install conversion in every available report.</p>
-  </div>
-</section>
-
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ TRACK 01 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-
-<!-- SLIDE 06 — Concept 01: Learning Has Changed v2 -->
+<!-- SLIDE 05 — Track A Concept 1: Learning Has Changed v2 -->
 <section data-background-color="#141428">
   <div class="slide-row">
     <div class="slide-col left">
-      <div class="c-head aspirational">
-        <div class="ch-l">
-          <span class="d ok">●</span>
-          <span><strong class="ok">Track 01</strong> &nbsp;·&nbsp; Aspirational Loss-Aversion</span>
-        </div>
-        <div class="ch-r">
-          <strong>Concept 01</strong>
-          <span class="sep">·</span>
-          <span class="yellow">⚡ Top performer (May 13)</span>
-        </div>
+      <div class="c-head keep">
+        <div class="ch-l"><span class="d ok">●</span><span><strong class="ok">Track A</strong> &nbsp;·&nbsp; Extend what's working</span></div>
+        <div class="ch-r"><strong>Concept 01</strong> <span class="sep">·</span> <span>Recommended lead this cycle</span></div>
       </div>
       <h2>Learning Has Changed v2</h2>
-      <div class="tagline-big">"Learning changed. You can keep up."</div>
+      <div class="tagline-big">"Learning has changed. You can keep up."</div>
       <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static + Motion variant</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok</span></div>
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static · refresh in-house</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta Feed · IG Feed</span></div>
         <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Young Pro Customers</span></div>
       </div>
       <div class="tbl">
-        <span class="tlbl">Layout</span><span class="tval">Headline up top, Bookster summary preview center, microcopy below — <em>"Every successful idea you've had came from something you read. Then forgot."</em> Motion variant: 10s text fade-in over the same composition.</span>
-        <span class="tlbl">Why</span><span class="tval">Direct extension of the only creative producing both installs and trial starts in May 13. Highest confidence concept in the set, recommended for the bulk of Young Pro spend.</span>
+        <span class="tlbl">Layout</span><span class="tval">Same composition as the version currently running — headline up top, summary preview center, side-hustler / plasma-seller persona body. <em>"Every successful idea you've had came from something you read and forgot."</em></span>
+        <span class="tlbl">Why lead</span><span class="tval">The only Meta static showing installs <em>and</em> a trial start in the current cycle. Encouraging signal, not stable truth on the install number — but on engagement it's clearly working. Recommend leaning into it as the bulk of Young Pro spend.</span>
       </div>
       <div class="prod-note">
         <span class="lbl">Production note</span>
-        Use the existing "Learning Has Changed" creative from the May 13 master deck as the starting point. <strong>Static</strong> is a 1-day Figma build. <strong>Motion variant</strong> is a 10-second After Effects animation layered over the same composition — same headline, same lockup, only the motion changes.
+        Refresh in-house, no new commission. Same headline, lockup, and CTA — just a fresher composition for fatigue mitigation in week 3. Static is a 1-day Figma turnaround.
       </div>
     </div>
     <div class="slide-col right">
       <div class="ad-mock primary r9-16">
         <div class="am-top" style="text-align:center;line-height:1.2;">
           <div style="font-size:1.7em;font-weight:700;color:var(--bk-yellow);">Learning has<br>changed.</div>
-          <div style="font-size:.95em;color:var(--bk-text-2);margin-top:6px;">Reading hasn't.</div>
+          <div style="font-size:.95em;color:var(--bk-text-2);margin-top:6px;">You can keep up.</div>
         </div>
         <div class="am-vis" style="flex-direction:column;gap:7px;"><div style="font-size:1.6em;opacity:.5;">📚 → ⚡</div><div style="font-size:.55em;color:var(--bk-text-2);line-height:1.5;">Hours of content<br>Minutes to learn</div></div>
-        <div class="am-bot"><div class="am-cta">Download free ⚡</div><div class="am-sub">You can keep up.</div></div>
+        <div class="am-bot"><div class="am-cta">Download free ⚡</div><div class="am-sub">15 minutes a day</div></div>
       </div>
-      <div class="ad-cap">Primary · 9:16 Reels / TikTok</div>
+      <div class="ad-cap">Primary · 9:16 Reels</div>
       <div class="variant-row">
         <div>
           <div class="ad-mock variant r1-1">
-            <div class="am-top" style="padding:6px;text-align:center;font-size:.55em;line-height:1.15;"><div style="color:var(--bk-yellow);font-weight:700;">Learning has changed.</div><div style="font-size:.85em;color:var(--bk-text-2);margin-top:3px;">Reading hasn't.</div></div>
-            <div class="am-vis" style="padding:4px;font-size:.6em;">⚡</div>
+            <div class="am-top" style="padding:6px;text-align:center;font-size:.55em;line-height:1.15;"><div style="color:var(--bk-yellow);font-weight:700;">Learning has changed.</div></div>
+            <div class="am-vis" style="font-size:.6em;">⚡</div>
             <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Download free</div></div>
           </div>
           <div class="ad-cap">1:1 Feed</div>
@@ -486,7 +303,7 @@
         <div>
           <div class="ad-mock variant r4-5">
             <div class="am-top" style="padding:6px;text-align:center;font-size:.55em;line-height:1.2;"><div style="color:var(--bk-yellow);font-weight:700;">Learning has<br>changed.</div></div>
-            <div class="am-vis" style="font-size:.55em;padding:4px;">📚 → ⚡</div>
+            <div class="am-vis" style="font-size:.55em;">📚 → ⚡</div>
             <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Download free</div></div>
           </div>
           <div class="ad-cap">4:5 Meta</div>
@@ -496,41 +313,35 @@
   </div>
 </section>
 
-<!-- SLIDE 07 — Concept 02: Knowledge That Sticks v2 -->
+<!-- SLIDE 06 — Track A Concept 2: Knowledge That Sticks v2 -->
 <section data-background-color="#141428">
   <div class="slide-row">
     <div class="slide-col left">
-      <div class="c-head aspirational">
-        <div class="ch-l">
-          <span class="d ok">●</span>
-          <span><strong class="ok">Track 01</strong> &nbsp;·&nbsp; Aspirational Loss-Aversion</span>
-        </div>
-        <div class="ch-r">
-          <strong>Concept 02</strong>
-          <span class="sep">·</span>
-          <span>HISI trial-start extension</span>
-        </div>
+      <div class="c-head keep">
+        <div class="ch-l"><span class="d ok">●</span><span><strong class="ok">Track A</strong> &nbsp;·&nbsp; Extend what's working</span></div>
+        <div class="ch-r"><strong>Concept 02</strong> <span class="sep">·</span> <span>HISI steady performer</span></div>
       </div>
       <h2>Knowledge That Sticks v2</h2>
-      <div class="tagline-big">"Read less. Remember more."</div>
+      <div class="tagline-big">"Knowledge that sticks."</div>
       <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static + Carousel</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · IG Carousel</span></div>
-        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">HISI</span></div>
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static + IG carousel variant</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta Feed · IG Carousel</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">High Intent Self-Improvers</span></div>
       </div>
       <div class="tbl">
-        <span class="tlbl">Carousel</span><span class="tval"><strong>1.</strong> "Read less. Remember more." + summary preview. <strong>2.</strong> Trivia feature — "Hit the trivia. Make it stick." <strong>3.</strong> "Two weeks later — actually remember." <strong>4.</strong> Comprehend · Remember · Apply.</span>
-        <span class="tlbl">Why</span><span class="tval">"Knowledge That Sticks" was the only HISI creative with a recorded trial start in May 13. Reusing the proven line, giving it carousel scaffolding so HISI can sit with the idea instead of converting from a single-image hook.</span>
+        <span class="tlbl">Layout</span><span class="tval">Booky with iPad and Apple pencil, big headline "Knowledge that sticks", summary preview below. <em>"Most people forget what they read. Bookster turns books, podcasts, and lessons into knowledge that actually sticks."</em></span>
+        <span class="tlbl">Carousel</span><span class="tval">For IG, expand into a 4-slide carousel so HISI can sit with the idea. Slide 1: hook. Slide 2: the trivia loop. Slide 3: two-weeks-later retention proof. Slide 4: comprehend · remember · apply.</span>
+        <span class="tlbl">Why keep</span><span class="tval">Strongest CTR on the HISI segment since launch, and the only creative HISI we'd defend in week 3. Branding-based execution that's earning its spot — refresh, don't replace.</span>
       </div>
       <div class="prod-note">
         <span class="lbl">Production note</span>
-        <strong>Carousel</strong> renders in Figma, 4 slides at 1080×1080. Export to Meta + IG. Reuse Bookster summary screenshots from the App Store listing — no new app-UI design needed. Single-day build.
+        Refresh static in Figma. Carousel build is a single-day extension of the same composition. Reuse Bookster summary screenshots from the App Store listing — no new app-UI design needed.
       </div>
     </div>
     <div class="slide-col right">
       <div class="ad-mock primary r1-1">
-        <div class="am-top" style="text-align:center;padding:14px 12px;"><div style="font-size:1.5em;font-weight:700;color:var(--bk-text);line-height:1.18;">Read less.<br>Remember more.</div><div style="font-size:.7em;color:var(--bk-purple);font-weight:600;margin-top:7px;">Comprehend · Remember · Apply</div></div>
-        <div class="am-vis" style="flex-direction:column;gap:6px;font-size:.5em;"><div style="font-size:1.6em;opacity:.55;">🧠⚡</div><div style="margin-top:4px;">→ swipe to learn how</div></div>
+        <div class="am-top" style="text-align:center;padding:14px 12px;"><div style="font-size:1.5em;font-weight:700;color:var(--bk-text);line-height:1.18;">Knowledge<br>that sticks.</div><div style="font-size:.65em;color:var(--bk-purple);font-weight:600;margin-top:7px;">Comprehend · Remember · Apply</div></div>
+        <div class="am-vis" style="flex-direction:column;gap:6px;font-size:.5em;"><div style="font-size:1.5em;opacity:.55;">🧠⚡</div><div style="margin-top:4px;">→ swipe for the loop</div></div>
         <div class="am-bot"><div class="am-cta">Download free ⚡</div></div>
       </div>
       <div class="ad-cap">Primary · Carousel slide 1</div>
@@ -556,93 +367,254 @@
   </div>
 </section>
 
-<!-- SLIDE 08 — Concept 03: Turn Content Into Growth UGC -->
+<!-- SLIDE 07 — Track A Concept 3: Turn Content Into Growth UGC v2 -->
 <section data-background-color="#141428">
   <div class="slide-row">
     <div class="slide-col left">
-      <div class="c-head aspirational">
-        <div class="ch-l">
-          <span class="d ok">●</span>
-          <span><strong class="ok">Track 01</strong> &nbsp;·&nbsp; Aspirational Loss-Aversion</span>
-        </div>
-        <div class="ch-r">
-          <strong>Concept 03</strong>
-          <span class="sep">·</span>
-          <span>3.08% CTR Meta winner → UGC port</span>
-        </div>
+      <div class="c-head keep">
+        <div class="ch-l"><span class="d ok">●</span><span><strong class="ok">Track A</strong> &nbsp;·&nbsp; Extend what's working</span></div>
+        <div class="ch-r"><strong>Concept 03</strong> <span class="sep">·</span> <span>UGC refresh — modular re-edit</span></div>
       </div>
-      <h2>Turn Content Into Growth</h2>
-      <div class="tagline-big">"I read 30 books last quarter. My boss read 4."</div>
+      <h2>Turn Content Into Growth v2</h2>
+      <div class="tagline-big">"Turn content into growth."</div>
       <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">30s UGC video</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok</span></div>
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">UGC video · in-house re-edit</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · IG Reels · TikTok</span></div>
         <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Young Pro Customers</span></div>
       </div>
-      <div class="script-blk">
-        <span class="script-t">0:00–0:03</span><span class="script-l"><strong>Creator on camera, conversational, slight smirk:</strong> "I read 30 books last quarter. My boss read four."</span>
-        <span class="script-t">0:03–0:09</span><span class="script-l"><strong>Hold on creator:</strong> "Same hours in the day. He's not lazy — he's just reading them the old way. A book a month, if he's lucky."</span>
-        <span class="script-t">0:09–0:17</span><span class="script-l"><strong>Phone-screen cut: Bookster summary scrolling:</strong> "I get 15 minutes for the whole book. Atomic Habits, done on the train. Deep Work, done over lunch. Sapiens, before my standup."</span>
-        <span class="script-t">0:17–0:23</span><span class="script-l"><strong>Back to creator:</strong> "It's not about reading more. It's about not falling behind people who do."</span>
-        <span class="script-t">0:23–0:30</span><span class="script-l"><strong>End on creator + soft smile:</strong> "Bookster. 15 minutes a day. Free to try. Link below."</span>
+      <div class="tbl">
+        <span class="tlbl">Source</span><span class="tval">Same Brian / Cara footage we commissioned and edited in-house — the existing UGC delivered the 3.08% Meta CTR on Young Pro, our best engagement signal in the account.</span>
+        <span class="tlbl">Refresh</span><span class="tval">Stitch new hook and CTA variants from the same footage. Test two openings in parallel — "I used to save every podcast clip..." and "Name three things from the last business book you read..." — same body, different lead-in. Modular variant testing, no new commission cost.</span>
+        <span class="tlbl">Why keep</span><span class="tval">UGC is what TikTok algorithm actually rewards (the platform is video-only — statics don't ship to feed). Extending the proven UGC into the next cycle is the highest-confidence play we have on Young Pro for both Meta and TikTok.</span>
+      </div>
+      <div class="prod-note">
+        <span class="lbl">Production note</span>
+        Edits done in-house at 36N — no new commission, no Fiverr fees, no additional UGC budget this cycle. We hold the original $700 commission line until the data tells us where to spend next. Holding off on commissioning anything new until the data warrants it.
       </div>
     </div>
     <div class="slide-col right">
       <div class="ad-mock primary r9-16">
-        <div class="am-top" style="text-align:center;line-height:1.2;"><div style="font-size:1em;color:var(--bk-text);font-weight:700;">I read 30 books<br>last quarter.</div><div style="font-size:.85em;color:var(--bk-yellow);margin-top:4px;">My boss read 4.</div></div>
-        <div class="am-vis" style="flex-direction:column;gap:6px;"><div style="width:48px;height:48px;border-radius:50%;background:var(--bk-card);display:flex;align-items:center;justify-content:center;font-size:1.4em;">👤</div><div style="font-size:.5em;color:var(--bk-text-3);text-align:center;font-style:italic;">"Same hours.<br>Different system."</div></div>
-        <div class="am-bot"><div class="am-cta">Try free ⚡</div><div class="am-sub">Link in bio</div></div>
+        <div class="am-top" style="text-align:center;padding-bottom:0;"><div style="font-size:.7em;color:var(--bk-text-3);">🎥 UGC · Brian D.</div></div>
+        <div class="am-vis" style="flex-direction:column;gap:6px;"><div style="width:42px;height:42px;border-radius:50%;background:var(--bk-card);display:flex;align-items:center;justify-content:center;font-size:1.3em;">👤</div><div style="font-size:.55em;color:var(--bk-text-2);text-align:center;font-style:italic;line-height:1.4;">"Name three things<br>from the last business<br>book you read."</div></div>
+        <div class="am-bot"><div class="am-cta">Download free ⚡</div><div class="am-sub">Link in bio</div></div>
       </div>
-      <div class="ad-cap">Primary · 9:16</div>
-      <div class="sb-strip">
-        <div class="sb-mini"><div class="sb-mini-vis">👤<br>Creator, hook</div><div class="sb-mini-cap"><span class="t">0:00</span> Hook</div></div>
-        <div class="sb-mini"><div class="sb-mini-vis">📱<br>Summary scroll</div><div class="sb-mini-cap"><span class="t">0:09</span> Demo</div></div>
-        <div class="sb-mini"><div class="sb-mini-vis">👤<br>Soft smile</div><div class="sb-mini-cap"><span class="t">0:23</span> CTA</div></div>
+      <div class="ad-cap">Primary · 9:16 Reels / TikTok</div>
+      <div class="variant-row">
+        <div>
+          <div class="ad-mock variant r9-16">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.5em;">Variant A</div>
+            <div class="am-vis" style="font-size:.55em;">👤<br>"Save less posts."</div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Download</div></div>
+          </div>
+          <div class="ad-cap">A — Save less</div>
+        </div>
+        <div>
+          <div class="ad-mock variant r9-16">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.5em;">Variant B</div>
+            <div class="am-vis" style="font-size:.55em;">👤<br>"Real growth."</div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Download</div></div>
+          </div>
+          <div class="ad-cap">B — Real growth</div>
+        </div>
       </div>
-      <div class="ad-cap">Storyboard · 3 beats</div>
     </div>
   </div>
 </section>
 
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ TRACK 02 — OPEN LANES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- ━━━━━━━━━━━ TRACK B — Human-layer statics (NEW) ━━━━━━━━━━━ -->
 
-<!-- SLIDE 09 — Concept 04: Bookmark Trap -->
+<!-- SLIDE 08 — Track B Concept 4: Text Conversation Overlay -->
 <section data-background-color="#141428">
   <div class="slide-row">
     <div class="slide-col left">
-      <div class="c-head openlane">
-        <div class="ch-l">
-          <span class="d accent">●</span>
-          <span><strong class="accent">Track 02</strong> &nbsp;·&nbsp; Open Lane</span>
-        </div>
-        <div class="ch-r">
-          <strong>Concept 04</strong>
-          <span class="sep">·</span>
-          <span>No competitor using this angle</span>
-        </div>
+      <div class="c-head human">
+        <div class="ch-l"><span class="d accent">●</span><span><strong class="accent">Track B</strong> &nbsp;·&nbsp; Human-layer (new)</span></div>
+        <div class="ch-r"><strong>Concept 04</strong> <span class="sep">·</span> <span>New direction · text overlay</span></div>
       </div>
-      <h2>Bookmark Trap</h2>
-      <div class="tagline-big">"Your bookmarks are a graveyard."</div>
+      <h2>Text Conversation</h2>
+      <div class="tagline-big">"Tell me you've actually been reading."</div>
       <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static + Motion graphic</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · IG Reels · TikTok</span></div>
-        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both</span></div>
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static · iMessage aesthetic</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta Feed · IG Feed · Apple Display</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Young Pro Customers</span></div>
       </div>
       <div class="tbl">
-        <span class="tlbl">Layout</span><span class="tval">Counter graphic: <strong class="yellow">SAVED 1,400</strong> over <strong class="bad">READ 4</strong>. Headline: "You've saved 1,400 things this year." Body: "There's a reason you feel like you're falling behind." Motion variant: 10s counter animation ending in Bookster reveal.</span>
-        <span class="tlbl">Why</span><span class="tval">No competitor in the book-summary category is using this approach. Names the substitution behavior — bookmarking as a proxy for reading — before viewers can rationalize it. Smaller initial allocation given it's fresh; scale if engagement signal is strong.</span>
+        <span class="tlbl">Layout</span><span class="tval">iPhone iMessage screenshot. Casual text exchange between two friends about Bookster. <em>"tell me you've actually been reading"</em> · <em>"lol yeah Bookster"</em> · <em>"wait what's that"</em> · <em>"books in 15 min · keeping up at this rate"</em>. App preview + CTA below the conversation.</span>
+        <span class="tlbl">Why test</span><span class="tval">Leverages the human layer instead of the Bookie mascot — a real moment of recommendation between friends, not a brand statement. Of course we're keeping Bookie on the brand surfaces, but for performance creative I want to see whether the documentary register pulls higher than the polished mascot work.</span>
       </div>
       <div class="prod-note">
         <span class="lbl">Production note</span>
-        <strong>Motion graphic</strong> built in After Effects — counter animation + Bookster app reveal. Stock footage for the phone bookmark feed (~$30 from Storyblocks). 10-second loop, no creator, no shoot. <strong>Static</strong> exports from the same composition.
+        Built in-house, 1-day Figma turnaround. iPhone photos done personally — same workflow as the iPhone shots from the earlier cycle. Not commissioning external production for this; it's my time, not budget.
+      </div>
+    </div>
+    <div class="slide-col right">
+      <div class="ad-mock primary r1-1">
+        <div class="am-top" style="padding:10px;background:linear-gradient(180deg,#1a1a30 0%,var(--bk-card-dark) 100%);"><div style="font-size:.55em;color:var(--bk-text-3);text-align:center;font-family:var(--bk-b);margin-bottom:8px;">iMessage · Sara</div><div style="display:flex;flex-direction:column;gap:5px;"><div style="background:#3a3a4a;color:white;padding:6px 9px;border-radius:13px;align-self:flex-start;font-size:.5em;font-family:var(--bk-b);max-width:75%;font-weight:400;">tell me you've actually been reading</div><div style="background:var(--bk-purple);color:white;padding:6px 9px;border-radius:13px;align-self:flex-end;font-size:.5em;font-family:var(--bk-b);max-width:75%;font-weight:400;">lol yeah · Bookster · 15min/book</div><div style="background:#3a3a4a;color:white;padding:6px 9px;border-radius:13px;align-self:flex-start;font-size:.5em;font-family:var(--bk-b);max-width:75%;font-weight:400;">wait what</div></div></div>
+        <div class="am-vis" style="flex-direction:column;gap:5px;font-size:.5em;"><div>📱 Read in your downtime</div></div>
+        <div class="am-bot"><div class="am-cta">Download free ⚡</div></div>
+      </div>
+      <div class="ad-cap">Primary · 1:1 Feed</div>
+      <div class="variant-row">
+        <div>
+          <div class="ad-mock variant r1-1">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.45em;">Variant · Boss text</div>
+            <div class="am-vis" style="font-size:.45em;flex-direction:column;gap:2px;padding:4px;"><div style="color:var(--bk-text-2);">"that book the<br>boss mentioned?"</div><div style="color:var(--bk-purple);">"already read it"</div></div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Download</div></div>
+          </div>
+          <div class="ad-cap">Boss recap</div>
+        </div>
+        <div>
+          <div class="ad-mock variant r4-5">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.45em;">Variant · Group chat</div>
+            <div class="am-vis" style="font-size:.45em;flex-direction:column;gap:2px;padding:4px;"><div style="color:var(--bk-text-2);">"book club?"</div><div style="color:var(--bk-purple);">"caught up<br>over coffee"</div></div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Download</div></div>
+          </div>
+          <div class="ad-cap">Group chat</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 09 — Track B Concept 5: Lived-in iPhone Photo -->
+<section data-background-color="#141428">
+  <div class="slide-row">
+    <div class="slide-col left">
+      <div class="c-head human">
+        <div class="ch-l"><span class="d accent">●</span><span><strong class="accent">Track B</strong> &nbsp;·&nbsp; Human-layer (new)</span></div>
+        <div class="ch-r"><strong>Concept 05</strong> <span class="sep">·</span> <span>New direction · iPhone photo</span></div>
+      </div>
+      <h2>Lived-in iPhone Photo</h2>
+      <div class="tagline-big">"Finally finished a book this month."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static · documentary photo</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta Feed · IG Feed · Apple Display</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both groups</span></div>
+      </div>
+      <div class="tbl">
+        <span class="tlbl">Layout</span><span class="tval">Real iPhone photo. Nightstand at end of day — physical book closed, mug, lamp, phone open to a Bookster summary. Headline overlay top-left: <em>"Finally finished a book this month."</em> Body line below: <em>"Read 15 minutes a day, kept up with the books I've been meaning to."</em></span>
+        <span class="tlbl">Why test</span><span class="tval">The documentary feel earns trust the polished mascot work can't. Bookster as a small honest part of someone's day, not a marketing campaign about reading. Same audience as Concept 04 — testing whether the lived-in aesthetic pulls when the iMessage moment doesn't apply to the viewer.</span>
+      </div>
+      <div class="prod-note">
+        <span class="lbl">Production note</span>
+        Photo taken in-house — those iPhone photos from the earlier cycle were literally shot in my bathroom. Not commissioning a photographer. Same approach: my time, no additional budget. 1 day to shoot, half a day to type out.
+      </div>
+    </div>
+    <div class="slide-col right">
+      <div class="ad-mock primary r4-5">
+        <div class="am-top" style="padding:12px;"><div style="font-size:.85em;color:var(--bk-text);font-weight:700;line-height:1.2;font-family:var(--bk-h);">Finally finished<br>a book this month.</div><div style="font-size:.5em;color:var(--bk-text-3);margin-top:5px;">15 minutes a day · the books you meant to read</div></div>
+        <div class="am-vis" style="flex-direction:column;gap:5px;background:linear-gradient(135deg,#2a2530 0%,var(--bk-card-dark) 100%);"><div style="font-size:1.6em;opacity:.45;">📚 ☕ 📱</div><div style="font-size:.5em;color:var(--bk-text-3);">Photo · nightstand</div></div>
+        <div class="am-bot"><div class="am-cta">Download free ⚡</div></div>
+      </div>
+      <div class="ad-cap">Primary · 4:5 Feed</div>
+      <div class="variant-row">
+        <div>
+          <div class="ad-mock variant r1-1">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.45em;font-family:var(--bk-h);color:var(--bk-text);">Coffee table</div>
+            <div class="am-vis" style="font-size:.55em;">☕📖</div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Download</div></div>
+          </div>
+          <div class="ad-cap">Morning · 1:1</div>
+        </div>
+        <div>
+          <div class="ad-mock variant r1-1">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.45em;font-family:var(--bk-h);color:var(--bk-text);">Commute</div>
+            <div class="am-vis" style="font-size:.55em;">🚇📱</div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Download</div></div>
+          </div>
+          <div class="ad-cap">Commute · 1:1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 10 — Track B Concept 6: Sticky Note Marginalia -->
+<section data-background-color="#141428">
+  <div class="slide-row">
+    <div class="slide-col left">
+      <div class="c-head human">
+        <div class="ch-l"><span class="d accent">●</span><span><strong class="accent">Track B</strong> &nbsp;·&nbsp; Human-layer (new)</span></div>
+        <div class="ch-r"><strong>Concept 06</strong> <span class="sep">·</span> <span>New direction · marginalia</span></div>
+      </div>
+      <h2>Sticky Note Marginalia</h2>
+      <div class="tagline-big">"The chapter that changed how I plan my day."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static · hand-written annotation</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta Feed · IG Feed · Apple Display</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">High Intent Self-Improvers</span></div>
+      </div>
+      <div class="tbl">
+        <span class="tlbl">Layout</span><span class="tval">Photo of a book page with sticky notes and hand-written margin annotations. The Bookster summary screenshot of the same chapter ghosted behind. Headline overlay: <em>"The chapter that changed how I plan my day."</em> Body: <em>"Got the whole book in 15 minutes. The good ideas I marked up — same as the print copy."</em></span>
+        <span class="tlbl">Why test</span><span class="tval">HISI audience cares about the act of marking ideas up — that's a habit of theirs the polished creative hasn't spoken to. The hand-written layer signals that Bookster is for serious readers, not corner-cutters. Pairs well alongside Knowledge That Sticks as the steady HISI bet for the next cycle.</span>
+      </div>
+      <div class="prod-note">
+        <span class="lbl">Production note</span>
+        Same in-house approach as the other two — books I already own, sticky notes from the desk, iPhone photo, type-on overlay in Figma. 1-day build. Rotate the featured book quarterly (Atomic Habits Q2, then Deep Work, Sapiens) to keep it fresh.
+      </div>
+    </div>
+    <div class="slide-col right">
+      <div class="ad-mock primary r1-1">
+        <div class="am-top" style="padding:10px;"><div style="font-size:.7em;color:var(--bk-text);font-weight:700;line-height:1.25;font-family:var(--bk-h);">The chapter that<br>changed how I plan<br>my day.</div></div>
+        <div class="am-vis" style="flex-direction:column;gap:5px;background:linear-gradient(135deg,#2c2535 0%,var(--bk-card-dark) 100%);"><div style="font-size:1.4em;opacity:.5;">📖 ✏️ 📝</div><div style="font-size:.45em;color:var(--bk-text-3);text-align:center;">Hand-marked book +<br>Bookster summary ghosted</div></div>
+        <div class="am-bot"><div class="am-cta">Get the summary in 15 min ⚡</div></div>
+      </div>
+      <div class="ad-cap">Primary · 1:1 Feed</div>
+      <div class="variant-row">
+        <div>
+          <div class="ad-mock variant r1-1">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.45em;font-family:var(--bk-h);color:var(--bk-text);line-height:1.2;">Atomic Habits<br>Ch. 1</div>
+            <div class="am-vis" style="font-size:.45em;">📝</div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">12 min read</div></div>
+          </div>
+          <div class="ad-cap">Q2 book</div>
+        </div>
+        <div>
+          <div class="ad-mock variant r1-1">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.45em;font-family:var(--bk-h);color:var(--bk-text);line-height:1.2;">Deep Work<br>Ch. 3</div>
+            <div class="am-vis" style="font-size:.45em;">📝</div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">12 min read</div></div>
+          </div>
+          <div class="ad-cap">Q3 book</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━ TRACK C — Behavioral test (small allocation) ━━━━━━━━━━━ -->
+
+<!-- SLIDE 11 — Track C Concept 7: Bookmark Trap -->
+<section data-background-color="#141428">
+  <div class="slide-row">
+    <div class="slide-col left">
+      <div class="c-head behavioral">
+        <div class="ch-l"><span class="d yellow">●</span><span><strong class="yellow">Track C</strong> &nbsp;·&nbsp; Behavioral direction (test)</span></div>
+        <div class="ch-r"><strong>Concept 07</strong> <span class="sep">·</span> <span>POV scroll · motion graphic</span></div>
+      </div>
+      <h2>Bookmark Trap</h2>
+      <div class="tagline-big">"You've saved 1,400 things. You've read four."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">15s motion graphic (After Effects)</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · IG Reels · TikTok (motion)</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both groups</span></div>
+      </div>
+      <div class="tbl">
+        <span class="tlbl">Layout</span><span class="tval">POV phone screen — bookmarks feed scrolling. Counter graphic ticks up: <strong class="yellow">SAVED: 1,400</strong> · <strong class="bad">READ: 4</strong>. Body line: <em>"There's a reason you feel like you're falling behind."</em> Then Bookster app fades in with: <em>"15 minutes. Bookmark to knowledge."</em></span>
+        <span class="tlbl">Why test</span><span class="tval">Small allocation test of the more behavioral / loss-aversion direction we've discussed. The bookmark-as-graveyard angle hasn't been used in the book-summary category — if the data backs it inside two weeks, we lean further in. If it doesn't, we've learned without anchoring the cycle on it.</span>
+      </div>
+      <div class="prod-note">
+        <span class="lbl">Production note</span>
+        Motion graphic built in After Effects in-house. Stock footage for the phone bookmark feed (~$30 from Storyblocks). 10–15 second loop, no creator, no shoot. Total production cost outside my time: under $50.
       </div>
     </div>
     <div class="slide-col right">
       <div class="ad-mock primary r9-16">
-        <div class="am-top" style="text-align:center;">You've saved<br><span style="color:var(--bk-yellow);font-size:1.6em;">1,400</span><br>things this year.</div>
-        <div class="am-vis" style="flex-direction:column;gap:6px;"><div style="font-size:1.3em;opacity:.35;">📌🔖📰</div><div>SAVED: 1,400<br><span class="bad">READ:&nbsp;&nbsp;4</span></div></div>
+        <div class="am-top" style="text-align:center;">You've saved<br><span style="color:var(--bk-yellow);font-size:1.5em;">1,400</span><br>things this year.</div>
+        <div class="am-vis" style="flex-direction:column;gap:6px;"><div style="font-size:1.2em;opacity:.4;">📌🔖📰</div><div>SAVED: 1,400<br><span class="bad">READ:&nbsp;&nbsp;4</span></div></div>
         <div class="am-bot"><div class="am-cta">Download free ⚡</div><div class="am-sub">Bookmark to knowledge</div></div>
       </div>
-      <div class="ad-cap">Primary · 9:16 static</div>
+      <div class="ad-cap">Primary · 9:16 motion</div>
       <div class="variant-row">
         <div>
           <div class="ad-mock variant r1-1">
@@ -653,499 +625,225 @@
           <div class="ad-cap">1:1 Static</div>
         </div>
         <div>
-          <div class="ad-mock variant r9-16">
+          <div class="ad-mock variant r4-5">
             <div class="am-top" style="padding:5px;text-align:center;font-size:.5em;color:var(--bk-yellow);">10s motion</div>
-            <div class="am-vis" style="font-size:.5em;flex-direction:column;gap:2px;padding:4px;"><div>Counter</div><div>ticks → 1,400</div></div>
+            <div class="am-vis" style="font-size:.5em;flex-direction:column;gap:2px;padding:4px;"><div>Counter</div><div>→ 1,400</div></div>
             <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Download</div></div>
           </div>
-          <div class="ad-cap">10s motion</div>
+          <div class="ad-cap">4:5 motion</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SLIDE 10 — Concept 05: Insight-First Reveal -->
+<!-- SLIDE 12 — Track C Concept 8: 2am Address -->
 <section data-background-color="#141428">
   <div class="slide-row">
     <div class="slide-col left">
-      <div class="c-head openlane">
-        <div class="ch-l">
-          <span class="d accent">●</span>
-          <span><strong class="accent">Track 02</strong> &nbsp;·&nbsp; Open Lane</span>
-        </div>
-        <div class="ch-r">
-          <strong>Concept 05</strong>
-          <span class="sep">·</span>
-          <span>Headway's blind spot — show the book</span>
-        </div>
+      <div class="c-head behavioral">
+        <div class="ch-l"><span class="d yellow">●</span><span><strong class="yellow">Track C</strong> &nbsp;·&nbsp; Behavioral direction (test)</span></div>
+        <div class="ch-r"><strong>Concept 08</strong> <span class="sep">·</span> <span>Text-only motion · budget hedge</span></div>
       </div>
-      <h2>Insight-First Reveal</h2>
-      <div class="tagline-big">"Goals set direction.<br>Systems make progress."</div>
-      <p class="xs muted" style="margin-top:-6px;margin-bottom:6px;">— Atomic Habits, James Clear &nbsp;·&nbsp; <span class="accent bold">This whole book in 12 minutes</span></p>
+      <h2>2am Address</h2>
+      <div class="tagline-big">"The book on your nightstand hasn't moved in 6 months."</div>
       <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static + Motion variant</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok · Apple Display</span></div>
-        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both</span></div>
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">15s motion graphic · text-only</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok motion</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both groups</span></div>
       </div>
       <div class="tbl">
-        <span class="tlbl">Layout</span><span class="tval">Open with the book quote on screen — type-on animation, looks like editorial. Bookster timer "11:48" reveals it's a summary. Motion variant: 5 insights stack across 6 seconds, then pull back to the Bookster app. <em>"You just read the whole book."</em></span>
-        <span class="tlbl">Variant pool</span><span class="tval">Rotate the featured book quarterly — Atomic Habits, Deep Work, Sapiens, Why We Sleep, The 7 Habits. Each variant teaches the algorithm a different reader intent.</span>
-        <span class="tlbl">Why</span><span class="tval">Headway runs 50,000 ads per month and refuses to show actual book content. The category's loudest brand has left this lane open; Bookster claims it with concepts that lead with insight.</span>
+        <span class="tlbl">Layout</span><span class="tval">Dark navy background. Yellow Poppins 700 type-on animation: <em>"It's 2am."</em> Beat. <em>"You've been scrolling for 47 minutes."</em> Beat. <em>"The book on your nightstand hasn't moved in 6 months."</em> Then Bookster summary fades in. <em>"The version of you that reads is one tap away."</em></span>
+        <span class="tlbl">Why test</span><span class="tval">No creator, no b-roll, no production cost beyond After Effects time. The cheapest production we can put in market — pairs naturally with the bookmark-trap concept as the second behavioral test. Runs on TikTok because it's a video, even though it's text-only.</span>
       </div>
       <div class="prod-note">
         <span class="lbl">Production note</span>
-        Lock the <strong>Q1 book quote pool</strong> with Jan before production — Atomic Habits as Q1 hero. Type-on animation in After Effects, ~12 seconds end-to-end. Same template extends to Deep Work, Sapiens, etc. for quarterly refresh without rebuilding the visual system.
-      </div>
-    </div>
-    <div class="slide-col right">
-      <div class="ad-mock primary r9-16">
-        <div class="am-top" style="padding:11px 9px;background:linear-gradient(180deg,var(--bk-card-dark) 0%,var(--bk-bg) 100%);font-family:'Inter',serif;font-size:.55em;font-weight:400;line-height:1.4;color:var(--bk-text);text-align:left;">"Goals set direction. Systems make progress."<br><br><span style="color:var(--bk-text-3);font-size:.85em;">— Atomic Habits, Ch 1</span></div>
-        <div class="am-vis" style="flex-direction:column;gap:5px;background:#0a0a18;"><div style="font-size:.55em;color:var(--bk-yellow);font-weight:700;">⏱ 11:48</div><div style="font-size:.45em;color:var(--bk-text-3);text-align:center;">You just read<br>the whole book.</div></div>
-        <div class="am-bot"><div class="am-cta">Get the whole book in 12 min ⚡</div></div>
-      </div>
-      <div class="ad-cap">Primary · 9:16</div>
-      <div class="variant-row">
-        <div>
-          <div class="ad-mock variant r1-1">
-            <div class="am-top" style="padding:6px;font-size:.5em;font-weight:400;font-family:'Inter',serif;">"Deep work...<br>is your<br>superpower."</div>
-            <div class="am-vis" style="font-size:.5em;padding:4px;color:var(--bk-yellow);">— Deep Work</div>
-            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.45em;">12 min read</div></div>
-          </div>
-          <div class="ad-cap">Q2 variant</div>
-        </div>
-        <div>
-          <div class="ad-mock variant r1-1">
-            <div class="am-top" style="padding:6px;font-size:.5em;font-weight:400;font-family:'Inter',serif;">"Money is<br>a story<br>we agree on."</div>
-            <div class="am-vis" style="font-size:.5em;padding:4px;color:var(--bk-yellow);">— Sapiens</div>
-            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.45em;">12 min read</div></div>
-          </div>
-          <div class="ad-cap">Q3 variant</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SLIDE 11 — Concept 06: Stop Scrolling (in-house IRL) -->
-<section data-background-color="#141428">
-  <div class="slide-row">
-    <div class="slide-col left">
-      <div class="c-head openlane">
-        <div class="ch-l">
-          <span class="d accent">●</span>
-          <span><strong class="accent">Track 02</strong> &nbsp;·&nbsp; Open Lane</span>
-        </div>
-        <div class="ch-r">
-          <strong>Concept 06</strong>
-          <span class="sep">·</span>
-          <span>In-house IRL — clever struggle</span>
-        </div>
-      </div>
-      <h2>Stop Scrolling</h2>
-      <div class="tagline-big">"Stop scrolling.<br>You know what you're doing."</div>
-      <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">30s IRL video · in-house</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok</span></div>
-        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both</span></div>
-      </div>
-      <div class="script-blk">
-        <span class="script-t">0:00–0:03</span><span class="script-l"><strong>Direct address, phone-held camera, lived-in setting (couch, bed, kitchen):</strong> "Hey. Stop scrolling for a second."</span>
-        <span class="script-t">0:03–0:09</span><span class="script-l"><strong>Same shot, slight pause:</strong> "You promised yourself you'd read more this year. It's May. Be honest about how many books you've actually finished."</span>
-        <span class="script-t">0:09–0:16</span><span class="script-l"><strong>Slight chuckle, real:</strong> "I had twelve books on my nightstand in January. I've finished one. And the audiobook I half-listened to during the commute, which I'm not counting."</span>
-        <span class="script-t">0:16–0:23</span><span class="script-l"><strong>Hold phone up, app visible:</strong> "Then I found Bookster. Each summary is 15 minutes. I read Atomic Habits last Tuesday. Sapiens on Friday. The whole book — not a TikTok summary of the book."</span>
-        <span class="script-t">0:23–0:30</span><span class="script-l"><strong>Direct address, slight smile, soft close:</strong> "If you've been lying to yourself about finding time — start. Fifteen minutes. Link's in bio."</span>
-      </div>
-    </div>
-    <div class="slide-col right">
-      <div class="ad-mock primary r9-16">
-        <div class="am-top" style="text-align:center;line-height:1.2;padding:14px 8px;"><div style="font-size:1em;color:var(--bk-yellow);font-weight:700;font-family:var(--bk-h);">Stop scrolling.</div><div style="font-size:.7em;color:var(--bk-text-2);font-weight:500;margin-top:5px;line-height:1.4;">You know what<br>you're doing.</div></div>
-        <div class="am-vis" style="flex-direction:column;gap:6px;"><div style="width:46px;height:46px;border-radius:50%;background:var(--bk-card);display:flex;align-items:center;justify-content:center;font-size:1.4em;">👤</div><div style="font-size:.48em;color:var(--bk-text-3);text-align:center;">In-house · phone POV<br>Single shot · 30s</div></div>
-        <div class="am-bot"><div class="am-cta">Try free ⚡</div><div class="am-sub">Link in bio</div></div>
-      </div>
-      <div class="ad-cap">Primary · 9:16 IRL</div>
-      <div class="sb-strip">
-        <div class="sb-mini"><div class="sb-mini-vis">👤<br>Direct address</div><div class="sb-mini-cap"><span class="t">0:00</span> Hook</div></div>
-        <div class="sb-mini"><div class="sb-mini-vis">👤<br>Honest mirror</div><div class="sb-mini-cap"><span class="t">0:09</span> Struggle</div></div>
-        <div class="sb-mini"><div class="sb-mini-vis">📱<br>App reveal</div><div class="sb-mini-cap"><span class="t">0:23</span> Soft CTA</div></div>
-      </div>
-      <div class="ad-cap">Produced in-house by 36N</div>
-    </div>
-  </div>
-</section>
-
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ TRACK 03 — TIKTOK-NATIVE FORMAT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-
-<!-- SLIDE 12 — Concept 07: POV Reveal -->
-<section data-background-color="#141428">
-  <div class="slide-row">
-    <div class="slide-col left">
-      <div class="c-head format">
-        <div class="ch-l">
-          <span class="d yellow">●</span>
-          <span><strong class="yellow">Track 03</strong> &nbsp;·&nbsp; TikTok-Native Format</span>
-        </div>
-        <div class="ch-r">
-          <strong>Concept 07</strong>
-          <span class="sep">·</span>
-          <span>POV reveal — 52.7M-view format precedent</span>
-        </div>
-      </div>
-      <h2>POV Reveal</h2>
-      <div class="tagline-big">"POV: You finally found the app that makes you actually read."</div>
-      <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">30s UGC video</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">TikTok · IG Reels</span></div>
-        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Young Pro Customers</span></div>
-      </div>
-      <div class="script-blk">
-        <span class="script-t">0:00–0:02</span><span class="script-l"><strong>Close-up creator face, off-camera glance, half-smile:</strong> "POV: You finally found the app that makes you actually read."</span>
-        <span class="script-t">0:02–0:08</span><span class="script-l"><strong>Phone flip-up, app demo:</strong> "Atomic Habits. Done in 15. Deep Work. Done in 12. My Goodreads is finally not aspirational."</span>
-        <span class="script-t">0:08–0:16</span><span class="script-l"><strong>Screen recording — open summary, scroll, take trivia, see streak:</strong> "Every summary is read, edited, written by humans who actually read the book. Not AI. You take a trivia after to make it stick."</span>
-        <span class="script-t">0:16–0:24</span><span class="script-l"><strong>Wallet UI, dollar counter visible:</strong> "And — they pay you. Like, actual money. Up to $100 a day for finishing summaries. I'm up forty-something this month, just for reading on the train."</span>
-        <span class="script-t">0:24–0:30</span><span class="script-l"><strong>Back to creator, soft smile, low-key:</strong> "Link in bio. It's free. Try the first 5 summaries."</span>
-      </div>
-    </div>
-    <div class="slide-col right">
-      <div class="ad-mock primary r9-16">
-        <div class="am-top" style="text-align:center;line-height:1.2;padding:14px 8px;"><div style="font-size:.85em;color:var(--bk-text);font-weight:700;">POV:</div><div style="font-size:.7em;color:var(--bk-text-2);font-weight:500;margin-top:4px;line-height:1.4;">You finally found the app<br>that makes you actually read.</div></div>
-        <div class="am-vis" style="flex-direction:column;gap:6px;"><div style="width:44px;height:44px;border-radius:50%;background:var(--bk-card);display:flex;align-items:center;justify-content:center;font-size:1.3em;">😊</div><div style="font-size:.48em;color:var(--bk-text-3);text-align:center;">Face → app demo → reveal</div></div>
-        <div class="am-bot"><div class="am-cta">Link in bio ⚡</div></div>
-      </div>
-      <div class="ad-cap">Primary · 9:16 UGC</div>
-      <div class="sb-strip">
-        <div class="sb-mini"><div class="sb-mini-vis">😊<br>POV hook</div><div class="sb-mini-cap"><span class="t">0:00</span> Hook</div></div>
-        <div class="sb-mini"><div class="sb-mini-vis">📱<br>App demo</div><div class="sb-mini-cap"><span class="t">0:02</span> Demo</div></div>
-        <div class="sb-mini"><div class="sb-mini-vis">💰<br>Wallet UI</div><div class="sb-mini-cap"><span class="t">0:16</span> Surprise</div></div>
-      </div>
-      <div class="ad-cap">Native format — never feel like an ad until reveal</div>
-    </div>
-  </div>
-</section>
-
-<!-- SLIDE 13 — Concept 08: 2am Address -->
-<section data-background-color="#141428">
-  <div class="slide-row">
-    <div class="slide-col left">
-      <div class="c-head format">
-        <div class="ch-l">
-          <span class="d yellow">●</span>
-          <span><strong class="yellow">Track 03</strong> &nbsp;·&nbsp; TikTok-Native Format</span>
-        </div>
-        <div class="ch-r">
-          <strong>Concept 08</strong>
-          <span class="sep">·</span>
-          <span>Text-only motion · budget hedge</span>
-        </div>
-      </div>
-      <h2>2am Address</h2>
-      <div class="tagline-big">"The version of you that reads<br>starts tonight."</div>
-      <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">15s motion graphic (no talent)</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok</span></div>
-        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both</span></div>
-      </div>
-      <div class="tbl">
-        <span class="tlbl">Frame 1</span><span class="tval">Dark screen. Yellow Poppins 700 fades in: "It's 2am."</span>
-        <span class="tlbl">Frame 2</span><span class="tval">Beat — text continues: "You've been scrolling for 47 minutes."</span>
-        <span class="tlbl">Frame 3</span><span class="tval">"The book on your nightstand hasn't moved in 6 months."</span>
-        <span class="tlbl">Frame 4</span><span class="tval">Hold one beat. "You already know what this feeling is."</span>
-        <span class="tlbl">Frame 5</span><span class="tval">Bookster summary appears. "The version of you that reads is one tap away."</span>
-        <span class="tlbl">CTA</span><span class="tval">"Start tonight"</span>
-        <span class="tlbl">Why</span><span class="tval">Production-cheap. No creator, no b-roll, just typography and a short app render. Builds in After Effects in an afternoon. Useful as a cost-efficient hedge that can run across both audience segments while higher-production concepts are being shot.</span>
+        Pure typography animation in After Effects. Half-day build. Uses Bookster Poppins / Inter type system. Same template can be re-scripted for future cycles ("3pm. You haven't taken a real lunch break in 3 weeks...") if this concept earns its keep.
       </div>
     </div>
     <div class="slide-col right">
       <div class="ad-mock primary r9-16" style="background:#050510;">
-        <div class="am-top" style="padding-top:24px;text-align:center;"><div style="font-size:1.05em;color:var(--bk-yellow);font-weight:700;font-family:var(--bk-h);">It's 2am.</div><div style="font-size:.6em;color:var(--bk-text-2);margin-top:6px;line-height:1.55;">You've been scrolling<br>for 47 minutes.</div></div>
-        <div class="am-vis" style="flex-direction:column;gap:6px;background:#050510;"><div style="font-size:.58em;color:var(--bk-text-3);text-align:center;line-height:1.6;">The book on your<br>nightstand hasn't moved<br>in 6 months.</div><div style="font-size:.55em;color:var(--bk-text-2);text-align:center;font-style:italic;">"You already know."</div></div>
+        <div class="am-top" style="padding-top:18px;text-align:center;"><div style="font-size:1em;color:var(--bk-yellow);font-weight:700;font-family:var(--bk-h);">It's 2am.</div><div style="font-size:.6em;color:var(--bk-text-2);margin-top:5px;line-height:1.5;">You've been scrolling<br>for 47 minutes.</div></div>
+        <div class="am-vis" style="flex-direction:column;gap:5px;background:#050510;"><div style="font-size:.58em;color:var(--bk-text-3);text-align:center;line-height:1.6;">The book on your<br>nightstand hasn't moved<br>in 6 months.</div></div>
         <div class="am-bot"><div class="am-cta">Start tonight ⚡</div></div>
       </div>
-      <div class="ad-cap">Primary · 9:16 text-only</div>
-      <div class="sb-strip">
-        <div class="sb-mini" style="background:#050510;"><div class="sb-mini-vis" style="background:#050510;"><div style="color:var(--bk-yellow);">It's 2am.</div></div><div class="sb-mini-cap"><span class="t">F.1</span> Hook</div></div>
-        <div class="sb-mini" style="background:#050510;"><div class="sb-mini-vis" style="background:#050510;">Nightstand<br>6 months</div><div class="sb-mini-cap"><span class="t">F.3</span> Mirror</div></div>
-        <div class="sb-mini" style="background:#050510;"><div class="sb-mini-vis" style="background:#050510;"><div style="color:var(--bk-purple);">App UI</div></div><div class="sb-mini-cap"><span class="t">F.5</span> Escape</div></div>
-      </div>
-      <div class="ad-cap">Dark navy · Poppins SemiBold typography</div>
-    </div>
-  </div>
-</section>
-
-<!-- SLIDE 14 — Concept 09: Get Paid -->
-<section data-background-color="#141428">
-  <div class="slide-row">
-    <div class="slide-col left">
-      <div class="c-head format">
-        <div class="ch-l">
-          <span class="d yellow">●</span>
-          <span><strong class="yellow">Track 03</strong> &nbsp;·&nbsp; TikTok-Native Format</span>
+      <div class="ad-cap">Primary · 9:16 text-only motion</div>
+      <div class="variant-row">
+        <div>
+          <div class="ad-mock variant r9-16" style="background:#050510;">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.5em;color:var(--bk-yellow);">It's 2am.</div>
+            <div class="am-vis" style="background:#050510;font-size:.45em;color:var(--bk-text-3);text-align:center;">47 min scrolling</div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Start tonight</div></div>
+          </div>
+          <div class="ad-cap">F.1 Hook</div>
         </div>
-        <div class="ch-r">
-          <strong>Concept 09</strong>
-          <span class="sep">·</span>
-          <span>Jan's gamification angle (track LTV separately)</span>
-        </div>
-      </div>
-      <h2>Get Paid</h2>
-      <div class="tagline-big">"Bookster paid me <span class="yellow">$47</span> last week to read books."</div>
-      <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">30s UGC video</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">TikTok · Meta (secondary)</span></div>
-        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Young Pro Customers</span></div>
-      </div>
-      <div class="script-blk">
-        <span class="script-t">0:00–0:03</span><span class="script-l"><strong>Creator on camera, phone in hand, slight disbelief:</strong> "Bookster paid me $47 last week to read books."</span>
-        <span class="script-t">0:03–0:09</span><span class="script-l"><strong>Phone screen — app store / app icon:</strong> "I didn't believe it either when my friend told me. So I downloaded it. Real money. Up to $100 a day."</span>
-        <span class="script-t">0:09–0:17</span><span class="script-l"><strong>Screen recording — rewards dashboard, lottery, USD counter:</strong> "They pay you to finish summaries. I read 12 minutes on the train, hit the lottery wheel, get my coffee money for the week."</span>
-        <span class="script-t">0:17–0:24</span><span class="script-l"><strong>Cut to creator, casual:</strong> "$47 last week. $52 the week before. I'm not a kid trying to make rent. I just like getting paid to actually learn something."</span>
-        <span class="script-t">0:24–0:30</span><span class="script-l"><strong>End on creator + soft smile:</strong> "It's free to download. Get paid to get smarter. Link below."</span>
-      </div>
-    </div>
-    <div class="slide-col right">
-      <div class="ad-mock primary r9-16">
-        <div class="am-top" style="text-align:center;padding-bottom:4px;"><div style="font-size:.78em;color:var(--bk-yellow);font-weight:700;font-family:var(--bk-h);line-height:1.2;">This app paid me<br><span style="font-size:1.8em;">$47</span></div><div style="font-size:.5em;color:var(--bk-text-3);">last week</div></div>
-        <div class="am-vis" style="flex-direction:column;gap:6px;background:linear-gradient(135deg,#1a1400 0%,var(--bk-card-dark) 100%);"><div style="width:44px;height:44px;border-radius:50%;background:rgba(255,204,0,.15);display:flex;align-items:center;justify-content:center;font-size:1.3em;">💰</div><div style="font-size:.5em;color:var(--bk-text-2);text-align:center;">Up to $100/day<br>Real USD</div></div>
-        <div class="am-bot"><div class="am-cta" style="background:var(--bk-yellow);color:var(--bk-card-dark);">Get paid to read ⚡</div></div>
-      </div>
-      <div class="ad-cap">Primary · 9:16 UGC</div>
-      <div class="sb-strip">
-        <div class="sb-mini"><div class="sb-mini-vis">👤<br>Disbelief hook</div><div class="sb-mini-cap"><span class="t">0:00</span> Hook</div></div>
-        <div class="sb-mini"><div class="sb-mini-vis">💰<br>Rewards UI</div><div class="sb-mini-cap"><span class="t">0:09</span> Demo</div></div>
-        <div class="sb-mini"><div class="sb-mini-vis">👤<br>Soft close</div><div class="sb-mini-cap"><span class="t">0:24</span> CTA</div></div>
-      </div>
-      <div class="ad-cap">Track D7 retention separately — install-motivated</div>
-    </div>
-  </div>
-</section>
-
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ TRACK 04 — PREMIUM ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-
-<!-- SLIDE 15 — Concept 10: Premium-Intelligent (A+B) -->
-<section data-background-color="#141428">
-  <div class="slide-row">
-    <div class="slide-col left">
-      <div class="c-head premium">
-        <div class="ch-l">
-          <span class="d info">●</span>
-          <span><strong class="info">Track 04</strong> &nbsp;·&nbsp; Premium-Intelligent</span>
-        </div>
-        <div class="ch-r">
-          <strong>Concept 10</strong>
-          <span class="sep">·</span>
-          <span>Blinkist retreat — two A/B executions</span>
-        </div>
-      </div>
-      <h2>Premium-Intelligent</h2>
-      <div class="tagline-big">"Smart people read smarter.<br>Now you can too."</div>
-      <div class="c-meta">
-        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static A/B executions</span></div>
-        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta Feed · Apple Display</span></div>
-        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">HISI</span></div>
-      </div>
-      <p class="xs muted" style="margin-top:-2px;margin-bottom:6px;"><span class="info bold">Why now:</span> Blinkist has effectively stopped Meta ads in 2025. Their "intelligent companion for the curious mind" positioning lane is open. Bookster can claim it with two parallel executions to test what HISI responds to: premium positioning vs. anti-AI moat.</p>
-      <div class="exec-split">
-        <div class="exec-box">
-          <div class="exec-tag">Execution A</div>
-          <div class="exec-name">Intelligent Companion</div>
-          <div class="exec-body">Minimal premium layout. Book opening to summary, hands cradling coffee. Tagline: "Smart people read smarter. Now you can too."<br><br>Body: "Bookster — human-curated summaries that respect your time."<br><br>Proof: 800K readers · 4.9 ★ · Apple Editor's Choice. CTA: Start free trial.</div>
-        </div>
-        <div class="exec-box">
-          <div class="exec-tag">Execution B</div>
-          <div class="exec-name">Curated by Humans</div>
-          <div class="exec-body">Side-by-side: AI summary (vague, hallucinated) vs Bookster summary (sharp, specific).<br><br>Body: "AI guesses. Bookster knows. Every summary written by a human who actually read the book."<br><br>Anti-AI moat positioning. Editor credit visible per summary. CTA: Download free.</div>
-        </div>
-      </div>
-      <div class="card card-info" style="margin-top:8px;"><p class="xs"><span class="info bold">Naming flag for Execution B:</span> "Bookster.AI" name slightly conflicts with anti-AI positioning. Worth a small A/B between branded and stripped variant to test whether "AI" in the name is signal or liability for HISI.</p></div>
-    </div>
-    <div class="slide-col right">
-      <div class="ad-mock primary r1-1">
-        <div class="am-top" style="padding:14px 12px;text-align:center;"><div style="font-size:1.1em;color:var(--bk-text);font-weight:600;line-height:1.25;font-family:var(--bk-h);">Smart people<br>read smarter.</div><div style="font-size:.55em;color:var(--bk-text-3);margin-top:7px;letter-spacing:.06em;">NOW YOU CAN TOO.</div></div>
-        <div class="am-vis" style="flex-direction:column;gap:6px;background:linear-gradient(135deg,#1a1834 0%,var(--bk-card-dark) 100%);"><div style="font-size:1.6em;opacity:.45;">📖</div><div style="font-size:.42em;color:var(--bk-text-3);text-align:center;">800K · 4.9 ★ · Apple Editor's Choice</div></div>
-        <div class="am-bot"><div class="am-cta" style="background:var(--bk-card-dark);color:var(--bk-text);border:1px solid var(--bk-purple);">Start free trial</div></div>
-      </div>
-      <div class="ad-cap">Execution A · Intelligent Companion · 1:1</div>
-      <div class="ad-mock primary r1-1">
-        <div class="am-top" style="text-align:center;padding:10px 8px;"><div style="font-size:.78em;color:var(--bk-text);font-weight:600;font-family:var(--bk-h);">Real summaries.<br>Real authors.<br><span class="accent">Real takeaways.</span></div></div>
-        <div class="am-vis" style="flex-direction:column;gap:4px;"><div style="display:flex;gap:6px;font-size:.42em;text-align:center;width:100%;"><div style="flex:1;padding:6px;border:1px solid var(--bk-error);border-radius:4px;"><div style="color:var(--bk-error);font-weight:700;">AI</div><div style="color:var(--bk-text-3);">Guesses</div></div><div style="flex:1;padding:6px;border:1px solid var(--bk-success);border-radius:4px;"><div style="color:var(--bk-success);font-weight:700;">Bookster</div><div style="color:var(--bk-text-3);">Knows</div></div></div></div>
-        <div class="am-bot"><div class="am-cta">Download free ⚡</div></div>
-      </div>
-      <div class="ad-cap">Execution B · Curated by Humans · 1:1</div>
-    </div>
-  </div>
-</section>
-
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ EXECUTION ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-
-<!-- SLIDE 16 — TEST MATRIX -->
-<section data-background-color="#141428">
-  <span class="eyebrow">Test Architecture</span>
-  <h2>14-day test matrix · 10 concepts</h2>
-  <div class="slide-body">
-    <table class="tbl-data" style="margin-top:8px;">
-      <thead><tr><th>Concept</th><th>Track</th><th>Primary KPI</th><th>Bar to cross</th><th>Spend weight</th></tr></thead>
-      <tbody>
-        <tr><td>Learning Has Changed v2 <span class="badge badge-top" style="font-size:.5em;margin-left:4px;">LEAD</span></td><td class="ok">Aspirational</td><td>Install rate + D1</td><td>2× CPI vs current control</td><td><strong class="ok">25%</strong></td></tr>
-        <tr><td>Knowledge That Sticks v2</td><td class="ok">Aspirational</td><td>Trial start volume (HISI)</td><td>3× control trial starts</td><td>10%</td></tr>
-        <tr><td>Turn Content Into Growth UGC</td><td class="ok">Aspirational</td><td>CTR → install</td><td>Match 3.08% Meta static CTR</td><td><strong class="ok">15%</strong></td></tr>
-        <tr><td>Bookmark Trap</td><td class="accent">Open Lane</td><td>Install rate</td><td>Beat control 1.5× — novel-angle bonus</td><td>5%</td></tr>
-        <tr><td>Insight-First Reveal</td><td class="accent">Open Lane</td><td>Engagement + install</td><td>Beat Headway-template benchmark</td><td><strong class="ok">15%</strong></td></tr>
-        <tr><td>Stop Scrolling (in-house)</td><td class="accent">Open Lane</td><td>Hook rate + install</td><td>≥ 30% hook rate at 2s</td><td>10%</td></tr>
-        <tr><td>POV Reveal</td><td class="yellow">Format</td><td>TikTok hold rate + install</td><td>≥ 30% hook · ≥ 15% hold at 5s</td><td>10%</td></tr>
-        <tr><td>2am Address</td><td class="yellow">Format</td><td>CPI</td><td>CPI ≤ $25 (budget-hedge bar)</td><td>5%</td></tr>
-        <tr><td>Get Paid</td><td class="yellow">Format</td><td>Volume CPI · D7 separate</td><td>Track LTV cohort independently</td><td>5%</td></tr>
-        <tr><td>Premium-Intelligent (A+B)</td><td class="info">Premium</td><td>Brand-search lift + HISI trial</td><td>+15% branded search over 21d</td><td>—</td></tr>
-      </tbody>
-    </table>
-    <div class="g2" style="margin-top:8px;gap:8px;">
-      <div class="card card-dark"><p class="xs"><strong style="color:var(--bk-text);">Read window:</strong> 14 days for Tracks 01–03. 21 days for Track 04 Premium (brand metrics move slower). Get Paid tracked as separate D7 retention cohort throughout.</p></div>
-      <div class="card card-dark"><p class="xs"><strong style="color:var(--bk-text);">Read with the iOS caveat in mind:</strong> Meta and TikTok install data remains unreliable until Singular is cleared from Meta BM. Apple Search CPA is the cleanest signal. Meta and TikTok = CTR and CPC velocity only this cycle.</p></div>
-    </div>
-    <p class="xs muted" style="margin-top:6px;">Held for next cycle: a creator-deadpan testimonial concept (tonally similar to Turn Content Into Growth and Stop Scrolling). We'll bring it forward if either of those underperforms by Day 14.</p>
-  </div>
-</section>
-
-<!-- SLIDE 17 — PRODUCTION BRIEF -->
-<section data-background-color="#141428">
-  <span class="eyebrow">Production Brief</span>
-  <h2>Creator brief, format spec, talent</h2>
-  <div class="slide-body">
-    <div class="g2" style="margin-top:10px;gap:10px;flex:1;">
-      <div>
-        <div class="card">
-          <div class="eyebrow" style="margin-bottom:6px;">UGC creator direction</div>
-          <ul>
-            <li>Tone: conversational and lived-in, not performed. The flatter the better.</li>
-            <li>Delivery: first-person; the viewer should feel reflected, not addressed.</li>
-            <li>Camera: eye-level, minimal background, natural light. No ring-light gloss.</li>
-            <li>Hook lands in the first 2 seconds — no preamble.</li>
-            <li>Never mention subscription pricing or competitor names on camera.</li>
-            <li>POV concept (07): never feels like an ad until the reveal beat.</li>
-            <li>Stop Scrolling (06): produced in-house at 36N. Single shot, phone-held camera, lived-in setting. No b-roll needed.</li>
-          </ul>
-        </div>
-        <div class="card" style="margin-top:8px;">
-          <div class="eyebrow" style="margin-bottom:6px;">Creator allocation</div>
-          <table class="tbl-data" style="font-size:.84em;">
-            <thead><tr><th>Creator</th><th>Concepts</th><th>Rate</th></tr></thead>
-            <tbody>
-              <tr><td>Brian D.</td><td>Turn Content Into Growth · Insight-First voice-over</td><td>$150–450</td></tr>
-              <tr><td>Cara T.</td><td>POV Reveal · Get Paid</td><td>$400</td></tr>
-              <tr><td>Nicole C.</td><td>POV Reveal · Get Paid</td><td>$200–450</td></tr>
-              <tr><td>Marshall</td><td>Turn Content Into Growth · POV Reveal</td><td>$200–450</td></tr>
-              <tr><td>In-house · 36N</td><td>Stop Scrolling</td><td>$0 / production time only</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <div class="eyebrow" style="margin-bottom:6px;">Format spec</div>
-          <table class="tbl-data" style="font-size:.84em;">
-            <thead><tr><th>Platform</th><th>Ratio</th><th>Length</th><th>Hook rate target</th></tr></thead>
-            <tbody>
-              <tr><td>Meta Feed</td><td>1:1 / 4:5</td><td>up to 30s</td><td>≥ 30% at 2s</td></tr>
-              <tr><td>IG Reels</td><td>9:16</td><td>21–34s sweet spot</td><td>≥ 30% at 2s</td></tr>
-              <tr><td>TikTok</td><td>9:16</td><td>21–34s sweet spot</td><td>≥ 30% at 2s</td></tr>
-              <tr><td>Apple Display</td><td>1:1 / 1.91:1</td><td>Static</td><td>—</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="card" style="margin-top:8px;">
-          <div class="eyebrow" style="margin-bottom:6px;">Copy + design</div>
-          <ul>
-            <li>Hook must work with sound off — captions mandatory.</li>
-            <li>Captions: Poppins SemiBold white, 2px black outline.</li>
-            <li>CTA buttons: <span class="accent">#8C81FF</span> purple for installs, <span class="yellow">#FFCC00</span> yellow for Get Paid and any gamification angle.</li>
-            <li>Logo: lightning bolt + Bookster wordmark, white, lower-right safe zone.</li>
-            <li>Numbers: <span class="yellow">#FFCC00</span> for positive, <span class="bad">#F25458</span> for deficit / gap.</li>
-            <li>Button radius: 16px (Bookster brand standard).</li>
-            <li>Insight-First Reveal: show the literal product screen, not a stylized version.</li>
-          </ul>
+        <div>
+          <div class="ad-mock variant r9-16" style="background:#050510;">
+            <div class="am-top" style="padding:5px;text-align:center;font-size:.45em;color:var(--bk-text-2);">Nightstand<br>6 months</div>
+            <div class="am-vis" style="background:#050510;font-size:.45em;color:var(--bk-purple);">App fade-in</div>
+            <div class="am-bot" style="padding:4px;"><div class="am-cta" style="padding:3px 6px;font-size:.5em;">Start tonight</div></div>
+          </div>
+          <div class="ad-cap">F.3 Mirror</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SLIDE 18 — APPLE SEARCH PRIORITY -->
+<!-- ━━━━━━━━━━━ APPLE SEARCH ━━━━━━━━━━━ -->
+
+<!-- SLIDE 13 — Apple Search expansion -->
 <section data-background-color="#141428">
   <span class="eyebrow eyebrow-g">Channel Priority</span>
-  <h2>Apple Search — the only clean read right now</h2>
+  <h2>Apple Search — the channel doing the work this cycle</h2>
   <div class="slide-body">
+    <div class="stat-grid" style="margin-top:14px;">
+      <div class="stat"><div class="stat-num g">26</div><div class="stat-lbl">Installs Wk 2</div><div class="stat-sub">vs 17 Wk 1 — real growth</div></div>
+      <div class="stat"><div class="stat-num g">15.12%</div><div class="stat-lbl">Click-to-install</div><div class="stat-sub">healthy conversion</div></div>
+      <div class="stat"><div class="stat-num y">$17.17</div><div class="stat-lbl">Young Pro CPI</div><div class="stat-sub">above $2.50–$4.25 benchmark</div></div>
+      <div class="stat"><div class="stat-num p">5.7×</div><div class="stat-lbl">Better than CPA target</div><div class="stat-sub">vs the $75 target — encouraging signal, not stable truth</div></div>
+    </div>
     <div class="g2" style="margin-top:14px;gap:14px;flex:1;">
       <div class="card card-green">
-        <div class="eyebrow eyebrow-g" style="margin-bottom:6px;">Why it matters</div>
-        <p class="sm">Apple Search is the only platform with intact iOS attribution this cycle. Meta and TikTok install data is unreliable until Singular is removed from Meta BM. Apple is also the most efficient channel in the account.</p>
-        <ul style="margin-top:8px;">
-          <li><strong style="color:var(--bk-text);">$13.18</strong> blended install CPA</li>
-          <li><strong class="ok">$10.08</strong> CPA on Young Pro — the sharpest segment in the account</li>
-          <li>15.12% click-to-install rate (17 installs from 172 clicks)</li>
-          <li>5.7× better than the $75 CPA target</li>
+        <div class="eyebrow eyebrow-g" style="margin-bottom:6px;">What's working</div>
+        <ul>
+          <li>Young Pro Customers is the sharper acquisition angle — lower CPI than HISI</li>
+          <li>Click-to-install rate is genuinely healthy at 15.12% — the App Store page is converting</li>
+          <li>Branded demand keywords picking up volume</li>
+          <li>"Daily learning app" / "productivity" keyword themes the most efficient</li>
         </ul>
       </div>
       <div class="card card-purple">
-        <div class="eyebrow" style="margin-bottom:6px;">Recommendation for this cycle</div>
+        <div class="eyebrow" style="margin-bottom:6px;">How we scale next cycle</div>
         <ul>
-          <li>Scale Apple Search through keyword pruning and expansion — not just budget increase.</li>
-          <li>Weight winning Young Pro keywords (daily learning app, productivity, branded demand).</li>
-          <li>Reduce broad-match exposure on weaker HISI keywords.</li>
-          <li>Use Apple Search to validate creative angles while Meta attribution is broken — downstream conversion is reliable here.</li>
-          <li>Run Concept 10 Execution A (Intelligent Companion) on Apple Display — premium static fits search-intent context cleanly.</li>
+          <li><strong style="color:var(--bk-text);">Keyword pruning + expansion</strong>, not budget alone — the channel is the install engine, but we don't fix CPI by spending more on broad terms</li>
+          <li>Lean further into Young Pro winning keywords; force each keyword theme to earn continued spend on install CPA</li>
+          <li>Reduce broad-match exposure on weaker HISI terms — search term data will tell us what to cut</li>
+          <li>A/B test the 3 app store taglines already drafted in your design system</li>
+          <li>Run Concept 03 (Knowledge That Sticks v2) as 1:1 Apple Display creative — pairs with the branded keyword work</li>
         </ul>
       </div>
     </div>
-    <div class="card card-yellow" style="margin-top:10px;">
-      <p class="sm"><span class="yellow bold">⚡ Attribution recovery in flight:</span> Drew and Victor are coordinating with Adjust to clear Singular from Meta BM. Once that's done and view-through attribution is enabled (Alessandro's recommendation), Meta install data becomes trustworthy again and we can unlock full TikTok iOS budget for the POV Reveal and Get Paid concepts.</p>
+    <div class="card card-dark" style="margin-top:12px;">
+      <p class="sm"><strong style="color:var(--bk-text);">CPI is materially above benchmark</strong> right now — but the channel is producing real install volume and a healthy click-to-install rate, which is the bigger story. Volume is still light at the keyword level, so several of the better-looking CPAs are based on a single install and should be treated as encouraging signal, not stable truth. Tightening to high-intent keywords is the play, not a budget increase.</p>
     </div>
   </div>
 </section>
 
-<!-- SLIDE 19 — NEXT STEPS -->
+<!-- ━━━━━━━━━━━ CPI CONVERSATION ━━━━━━━━━━━ -->
+
+<!-- SLIDE 14 — On CPI -->
+<section data-background-color="#141428">
+  <span class="eyebrow">Honest conversation</span>
+  <h2>On the CPI target</h2>
+  <div class="slide-body">
+    <div class="g2" style="margin-top:14px;gap:14px;">
+      <div class="card">
+        <div class="eyebrow" style="margin-bottom:6px;">Your math · Jan</div>
+        <p style="font-size:.78em;color:var(--bk-text);font-weight:600;margin-bottom:6px;">$75 LTV ÷ 3 trial-to-install ÷ 30 install rate &nbsp;=&nbsp; <span class="yellow">$0.80 target CPI</span></p>
+        <p class="sm muted">The math holds at the model level — if every step of the funnel performs at the rate you've assumed, $0.80 CPI is the answer.</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow eyebrow-g" style="margin-bottom:6px;">Our published benchmark · Ethan</div>
+        <p style="font-size:.78em;color:var(--bk-text);font-weight:600;margin-bottom:6px;">Meta <span class="g">$3.00–$5.00</span> &nbsp;·&nbsp; TikTok <span class="g">$2.00–$3.50</span> &nbsp;·&nbsp; Apple <span class="g">$2.50–$4.25</span></p>
+        <p class="sm muted">The range our paid media team would defend as achievable on a US-market microlearning launch in the first 60 days with this audience set.</p>
+      </div>
+    </div>
+    <div class="card card-yellow" style="margin-top:14px;">
+      <div class="eyebrow eyebrow-y" style="margin-bottom:6px;">Where the gap comes from</div>
+      <p class="sm">The $0.80 number assumes a more efficient install-to-trial conversion than the audience has been showing us in market. Our 3.08% best Meta CTR is excellent — but the funnel from click → install → trial isn't yet conditioned on the kind of demand you'd need for $0.80 CPI to be live. <strong style="color:var(--bk-text);">I'm not about to spout off BS here — the $0.80 figure isn't realistic with the data we have today.</strong> The Apple Search number ($17 today) is the most honest read we have, and it's above benchmark. Until we restore clean Meta + TikTok attribution and get a stable week-4 read, we'd be guessing about the install rate the $0.80 math depends on.</p>
+    </div>
+    <div class="card card-dark" style="margin-top:12px;">
+      <p class="sm"><strong style="color:var(--bk-text);">What we're committing to:</strong> revisit the CPI target together at the Week 4 read once attribution is restored. We'll have clean numbers across all three platforms by then, the install rate will be a known, and we can rebuild the model with real data. Until then, $3–5 Meta is the benchmark we're operating against — and the Apple Search number is the truth we're trusting.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━ ATTRIBUTION RECOVERY ━━━━━━━━━━━ -->
+
+<!-- SLIDE 15 — Attribution recovery -->
+<section data-background-color="#141428">
+  <span class="eyebrow">Recovery path</span>
+  <h2>Attribution — what's broken, what's next</h2>
+  <div class="slide-body">
+    <div class="g2" style="margin-top:14px;gap:14px;">
+      <div class="card card-red">
+        <div class="eyebrow" style="color:var(--bk-error);margin-bottom:6px;">What's still broken</div>
+        <ul>
+          <li><strong style="color:var(--bk-text);">Singular still registered in Meta Business Manager</strong> — Meta is routing iOS attribution callbacks to a dead Singular endpoint. Single email to Singular support fixes it; no code change needed.</li>
+          <li>iOS App Verification = "Unavailable" in Adjust for both Meta and TikTok — likely Self-Attributing Network whitelisting issue; investigating with Adjust this week</li>
+          <li>TikTok-side error: "This app can't use iOS real-time reporting" — TikTok platform eligibility, separate from Adjust</li>
+          <li>Conversions API at 0% on Meta — would bypass ATT/SKAN limitations but requires backend integration on your side</li>
+        </ul>
+      </div>
+      <div class="card card-green">
+        <div class="eyebrow eyebrow-g" style="margin-bottom:6px;">What's been resolved this week</div>
+        <ul>
+          <li>SKAdNetwork postback config corrected (May 15) — Nico shipped the fix</li>
+          <li>ATE race condition + AttributionCopyEndpoint deployed (May 15) — Nico</li>
+          <li>Facebook connection re-added in Adjust under your account (May 18)</li>
+          <li>SKAN connection + partner parameters enabled (May 19)</li>
+          <li>Drew (external mobile dev with Frida experience) onboarded (May 19) for deeper investigation</li>
+          <li>Adjust account access requested via Michael (May 20) — gate for the next investigation step</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card card-purple" style="margin-top:14px;">
+      <div class="eyebrow" style="margin-bottom:6px;">Two-week recovery plan</div>
+      <ul>
+        <li><strong style="color:var(--bk-text);">Day 1–3:</strong> Send Singular removal email to <code style="background:rgba(255,255,255,.08);padding:1px 6px;border-radius:3px;font-family:Menlo,monospace;font-size:.85em;">support@singular.net</code>. You verify in Meta BM admin that Singular is no longer the registered iOS data partner.</li>
+          <li><strong style="color:var(--bk-text);">Day 3–7:</strong> Drew + Adjust deeper diagnostic on iOS App Verification. Validate Adjust → Meta postback pipeline once Singular is out.</li>
+          <li><strong style="color:var(--bk-text);">Day 7–10:</strong> Re-baseline Meta + TikTok install numbers against the now-clean read. Update the dashboard with corrected attribution.</li>
+          <li><strong style="color:var(--bk-text);">Day 10–14:</strong> Restore full Meta + TikTok spend if attribution is reading cleanly. Revisit the CPI target with you using the corrected data.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━ NEXT 14 DAYS ━━━━━━━━━━━ -->
+
+<!-- SLIDE 16 — Next 14 days -->
 <section data-background-color="#141428">
   <span class="eyebrow">Execution</span>
-  <h2>Ten concepts in market by Day 10</h2>
+  <h2>The next 14 days</h2>
   <div class="slide-body">
-    <div class="g3" style="margin-top:14px;gap:10px;flex:1;">
+    <div class="g3" style="margin-top:14px;gap:12px;flex:1;">
       <div class="card card-purple">
-        <div class="eyebrow" style="margin-bottom:6px;">Week 01 · Days 1–5</div>
+        <div class="eyebrow" style="margin-bottom:6px;">Week 1 · Days 1–5</div>
         <ul>
-          <li>Brief UGC creators for Turn Content Into Growth, POV Reveal, Get Paid</li>
-          <li>Shoot Stop Scrolling in-house at 36N — single shot, day 2</li>
-          <li>Build statics: Learning Has Changed, Knowledge That Sticks carousel, Premium-Intelligent A+B</li>
-          <li>Build motion graphics: Bookmark Trap, Insight-First Reveal, 2am Address</li>
-          <li>Lock Q2 book quote rotation for Insight-First (start with Atomic Habits)</li>
-          <li>Coordinate with Adjust on Singular removal from Meta BM</li>
+          <li>Refresh Track A — Learning Has Changed, Knowledge That Sticks, Turn Content Into Growth UGC (in-house)</li>
+          <li>Build Track B — Text Conversation, iPhone Photo, Sticky Note Marginalia statics (Figma · 1 day each)</li>
+          <li>Build Track C motion graphics — Bookmark Trap + 2am Address (After Effects · in-house)</li>
+          <li>Kill Get More Than Just The Gist + Learn Faster Win Faster</li>
+          <li>Send Singular removal email to Adjust + Meta BM verification</li>
+          <li>Apple Search — start keyword pruning + tagline A/B</li>
         </ul>
       </div>
       <div class="card card-purple">
-        <div class="eyebrow" style="margin-bottom:6px;">Week 02 · Days 6–10</div>
+        <div class="eyebrow" style="margin-bottom:6px;">Week 2 · Days 6–10</div>
         <ul>
-          <li>Edit and caption all UGC deliverables</li>
-          <li>Four-test gate review on every concept before upload (including Rule 5: show actual book content)</li>
-          <li>Upload to Meta Business Manager, TikTok Ads Manager, Apple Search</li>
-          <li>Apply 70% Young Pro / 30% HISI spend weight per matrix</li>
-          <li>Apple Search keyword refinement live by Day 8</li>
-          <li>Confirm Singular cleared from Meta BM before unlocking iOS budget on Meta and TikTok</li>
+          <li>Edit and caption UGC variants</li>
+          <li>Upload all 8 concepts to Meta + TikTok (motion only) + Apple Display</li>
+          <li>Allocate per the recommendation: 50% Track A · 30% Track B · 15% Track C · 5% Apple Search work</li>
+          <li>Maintain 50% defensive spend posture on Meta + TikTok pending attribution clearance</li>
+          <li>Drew + Adjust deeper diagnostic on iOS App Verification</li>
         </ul>
       </div>
       <div class="card card-purple">
-        <div class="eyebrow" style="margin-bottom:6px;">Day 14–21 · Read</div>
+        <div class="eyebrow" style="margin-bottom:6px;">Day 11–14 · Read + decide</div>
         <ul>
-          <li>Pull CPI, CTR, install rate by concept name</li>
-          <li>Apple Search CPA = ground truth; Meta CTR = velocity signal</li>
-          <li>Identify 2× CPI winners against the current control creative</li>
-          <li>Scale winners; pull underperformers</li>
-          <li>Brief 6–8 variations on winning approaches for the next cycle</li>
-          <li>D7 retention read on Get Paid as a separate cohort</li>
-          <li>Bring back the held-creator-testimonial concept if Turn Content Into Growth or POV Reveal underperform</li>
+          <li>Pull engagement metrics across all 8 concepts (CTR / CPC / hold rate / install if attribution is restored)</li>
+          <li>Apple Search is the truth — Meta + TikTok numbers carry the "encouraging signal" caveat until attribution clears</li>
+          <li>Revisit the CPI target with you using clean data</li>
+          <li>If Track C earns its keep on engagement signal, scale to 25% in cycle 4. If not, drop it and re-allocate to Track A or B.</li>
+          <li>Brief next cycle — 6 to 8 variations on the winning mechanics</li>
         </ul>
       </div>
     </div>
-    <div class="card card-dark" style="margin-top:10px;">
-      <p class="sm"><strong style="color:var(--bk-text);">Output velocity target:</strong> ten concepts in market in ten days. We'll refresh TikTok creatives every 7 days (fatigue cycles five times faster on TikTok than Meta), and bring the next cycle's variations into the queue at Day 14 based on what's working.</p>
+    <div class="card card-dark" style="margin-top:12px;">
+      <p class="sm">No new UGC commission this cycle — we hold the $700 line until the data warrants it. Track A refresh + Track B builds + Track C motion are all in-house. Of course we'd love to scale UGC again once attribution is clean and the data tells us where the spend earns its keep — but not before that.</p>
     </div>
-    <div class="cover-foot" style="position:relative;bottom:auto;left:auto;right:auto;margin-top:12px;"><span>Bookster.ai × 36 North &nbsp;//&nbsp; Q2 2026 Performance Adset</span><span>Prepared by Victor Freyre</span></div>
+    <div class="cover-foot" style="position:relative;bottom:auto;left:auto;right:auto;margin-top:12px;"><span>Bookster.ai × 36 North &nbsp;//&nbsp; Q2 2026 Next Cycle</span><span>Prepared by Michael Allen · 36 North</span></div>
   </div>
 </section>
 
