@@ -41,7 +41,7 @@
     .slide-row { display: flex; gap: 26px; align-items: stretch; flex: 1; min-height: 0; overflow: hidden; }
     .slide-col { display: flex; flex-direction: column; min-width: 0; min-height: 0; overflow: hidden; }
     .slide-col.left { flex: 1; gap: 10px; justify-content: flex-start; }
-    .slide-col.right { width: 300px; flex-shrink: 0; gap: 10px; align-items: stretch; justify-content: flex-start; }
+    .slide-col.right { flex: 1; gap: 10px; align-items: stretch; justify-content: flex-start; }
     .reveal .slides section { overflow: hidden; }
 
     .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -78,14 +78,14 @@
 
     /* Ad mock — sized to fit slide height budget */
     .ad-mock { border: 1px solid var(--bk-border); border-radius: 10px; overflow: hidden; background: var(--bk-card-dark); display: flex; flex-direction: column; box-shadow: 0 4px 18px rgba(0,0,0,.3); }
-    .ad-mock.primary { width: 100%; max-width: 240px; align-self: center; flex-shrink: 0; }
+    .ad-mock.primary { width: 100%; max-width: 230px; align-self: center; flex-shrink: 0; }
     .ad-mock.primary.r9-16 { aspect-ratio: 9 / 16; }
-    .ad-mock.primary.r1-1 { aspect-ratio: 1 / 1; }
-    .ad-mock.primary.r4-5 { aspect-ratio: 4 / 5; }
-    .ad-mock.variant { width: 100%; flex-shrink: 0; max-width: 124px; }
-    .ad-mock.variant.r9-16 { aspect-ratio: 9 / 16; }
-    .ad-mock.variant.r1-1 { aspect-ratio: 1 / 1; }
-    .ad-mock.variant.r4-5 { aspect-ratio: 4 / 5; }
+    .ad-mock.primary.r1-1 { aspect-ratio: 1 / 1; max-width: 320px; }
+    .ad-mock.primary.r4-5 { aspect-ratio: 4 / 5; max-width: 280px; }
+    .ad-mock.variant { width: 100%; flex-shrink: 0; }
+    .ad-mock.variant.r9-16 { aspect-ratio: 9 / 16; max-width: 110px; }
+    .ad-mock.variant.r1-1 { aspect-ratio: 1 / 1; max-width: 170px; }
+    .ad-mock.variant.r4-5 { aspect-ratio: 4 / 5; max-width: 145px; }
     .am-top { padding: 10px; font-family: var(--bk-h); font-size: .52em; font-weight: 700; color: var(--bk-text); line-height: 1.3; }
     .am-vis { flex: 1; min-height: 50px; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(160deg, #0a0a20 0%, var(--bk-card-dark) 100%); font-family: var(--bk-b); font-size: .5em; color: var(--bk-text-3); padding: 8px; line-height: 1.4; }
     .am-bot { padding: 8px; background: var(--bk-card); }
@@ -212,34 +212,78 @@
   <span class="eyebrow">Approach</span>
   <h2>Four creative tracks for the next 14 days</h2>
   <div class="slide-body">
-    <div class="g4" style="margin-top:10px;flex:1;">
-      <div class="card card-green">
+    <div class="g4" style="margin-top:12px;flex:1;align-items:stretch;height:100%;grid-auto-rows:1fr;">
+      <div class="card card-green" style="display:flex;flex-direction:column;">
         <div class="eyebrow eyebrow-g">Track 01</div>
-        <h3 style="font-size:.9em;color:var(--bk-text);margin-bottom:6px;">Aspirational Loss-Aversion</h3>
-        <p class="xs">Extends what's already working. "Learning Has Changed" plus two related angles. Highest confidence track for this cycle, recommended as the bulk of spend allocation.</p>
-        <p class="xs ok" style="margin-top:8px;font-weight:700;">3 concepts</p>
+        <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">Aspirational Loss-Aversion</h3>
+        <p class="xs" style="font-size:.62em;line-height:1.55;">Extends what's already working. "Learning Has Changed" plus two related angles. Highest confidence track for this cycle.</p>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(79,200,61,.18);">
+          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:6px;">Concepts in track</div>
+          <div style="font-family:var(--bk-b);font-size:.58em;color:var(--bk-text-2);line-height:1.7;">
+            <div>01 · Learning Has Changed v2 <span class="ok">●</span></div>
+            <div>02 · Knowledge That Sticks v2</div>
+            <div>03 · Turn Content Into Growth</div>
+          </div>
+        </div>
+        <div style="margin-top:auto;padding-top:10px;">
+          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);">Spend share</div>
+          <div class="ok bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">50%</div>
+        </div>
       </div>
-      <div class="card card-purple">
+      <div class="card card-purple" style="display:flex;flex-direction:column;">
         <div class="eyebrow">Track 02</div>
-        <h3 style="font-size:.9em;color:var(--bk-text);margin-bottom:6px;">Open Lanes</h3>
-        <p class="xs">Three places no competitor is currently playing: Headway never shows actual book content; the bookmark-as-graveyard idea is novel to the category; and the in-house "Stop Scrolling" video replaces a higher-scope script.</p>
-        <p class="xs accent" style="margin-top:8px;font-weight:700;">3 concepts</p>
+        <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">Open Lanes</h3>
+        <p class="xs" style="font-size:.62em;line-height:1.55;">Three places no competitor is currently playing. Headway never shows book content; bookmark-as-graveyard is novel; in-house "Stop Scrolling" replaces a higher-scope script.</p>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(140,129,255,.2);">
+          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:6px;">Concepts in track</div>
+          <div style="font-family:var(--bk-b);font-size:.58em;color:var(--bk-text-2);line-height:1.7;">
+            <div>04 · Bookmark Trap</div>
+            <div>05 · Insight-First Reveal</div>
+            <div>06 · Stop Scrolling (in-house)</div>
+          </div>
+        </div>
+        <div style="margin-top:auto;padding-top:10px;">
+          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);">Spend share</div>
+          <div class="accent bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">25%</div>
+        </div>
       </div>
-      <div class="card card-yellow">
+      <div class="card card-yellow" style="display:flex;flex-direction:column;">
         <div class="eyebrow eyebrow-y">Track 03</div>
-        <h3 style="font-size:.9em;color:var(--bk-text);margin-bottom:6px;">TikTok-Native</h3>
-        <p class="xs">Built for the 21–34 second sweet spot. Includes a creator-led POV reveal, a low-cost text-only motion graphic, and a creator-led gamification piece tied to the lottery feature.</p>
-        <p class="xs yellow" style="margin-top:8px;font-weight:700;">3 concepts</p>
+        <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">TikTok-Native</h3>
+        <p class="xs" style="font-size:.62em;line-height:1.55;">Built for the 21–34 second sweet spot. Includes a creator POV reveal, a low-cost text-only motion graphic, and a creator-led gamification piece.</p>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,204,0,.2);">
+          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:6px;">Concepts in track</div>
+          <div style="font-family:var(--bk-b);font-size:.58em;color:var(--bk-text-2);line-height:1.7;">
+            <div>07 · POV Reveal</div>
+            <div>08 · 2am Address</div>
+            <div>09 · Get Paid</div>
+          </div>
+        </div>
+        <div style="margin-top:auto;padding-top:10px;">
+          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);">Spend share</div>
+          <div class="yellow bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">20%</div>
+        </div>
       </div>
-      <div class="card card-info">
+      <div class="card card-info" style="display:flex;flex-direction:column;">
         <div class="eyebrow eyebrow-i">Track 04</div>
-        <h3 style="font-size:.9em;color:var(--bk-text);margin-bottom:6px;">Premium-Intelligent</h3>
-        <p class="xs">Blinkist has effectively stopped Meta ads. The "intelligent companion" lane they owned is open. One concept, two A/B executions to test positioning vs. anti-AI moat with HISI.</p>
-        <p class="xs info" style="margin-top:8px;font-weight:700;">1 concept · 2 executions</p>
+        <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">Premium-Intelligent</h3>
+        <p class="xs" style="font-size:.62em;line-height:1.55;">Blinkist has effectively stopped Meta ads. The "intelligent companion" lane they owned is open. One concept, two A/B executions to test positioning vs. anti-AI moat with HISI.</p>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(13,153,255,.2);">
+          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);margin-bottom:6px;">Concepts in track</div>
+          <div style="font-family:var(--bk-b);font-size:.58em;color:var(--bk-text-2);line-height:1.7;">
+            <div>10A · Intelligent Companion</div>
+            <div>10B · Curated by Humans</div>
+            <div class="muted" style="font-style:italic;">(slower 21-day read)</div>
+          </div>
+        </div>
+        <div style="margin-top:auto;padding-top:10px;">
+          <div style="font-family:var(--bk-b);font-size:.5em;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--bk-text-3);">Spend share</div>
+          <div class="info bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">5%</div>
+        </div>
       </div>
     </div>
     <div class="card card-dark" style="margin-top:10px;">
-      <p class="sm muted"><strong style="color:var(--bk-text);">Unifying approach across all tracks:</strong> point at the behavior, not the person. "Learning Has Changed. You Can Keep Up." is the registered tone — direct without being preachy. Every concept in this set tests that line at a different volume.</p>
+      <p class="sm muted"><strong style="color:var(--bk-text);">Unifying approach across all tracks:</strong> point at the behavior, not the person. "Learning Has Changed. You Can Keep Up." is the registered tone — direct without being preachy. Every concept in this set tests that line at a different volume. The current account winner is Side-Hustlers persona on Group 2 (Young Pro Customers) — we weight 70% of spend there.</p>
     </div>
   </div>
 </section>
