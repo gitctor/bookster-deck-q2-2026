@@ -37,11 +37,12 @@
     .accent{color:var(--bk-purple)!important} .yellow{color:var(--bk-yellow)!important} .muted{color:var(--bk-text-3)!important} .ok{color:var(--bk-success)!important} .bad{color:var(--bk-error)!important} .info{color:var(--bk-info)!important}
     .bold{font-weight:700!important} .sm{font-size:.7em!important} .xs{font-size:.58em!important}
 
-    .slide-body { flex: 1; display: flex; flex-direction: column; min-height: 0; justify-content: space-between; }
-    .slide-row { display: flex; gap: 26px; align-items: stretch; flex: 1; min-height: 0; }
-    .slide-col { display: flex; flex-direction: column; min-width: 0; }
-    .slide-col.left { flex: 1; gap: 12px; justify-content: space-between; }
-    .slide-col.right { width: 380px; flex-shrink: 0; gap: 12px; align-items: stretch; justify-content: space-between; }
+    .slide-body { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+    .slide-row { display: flex; gap: 26px; align-items: stretch; flex: 1; min-height: 0; overflow: hidden; }
+    .slide-col { display: flex; flex-direction: column; min-width: 0; min-height: 0; overflow: hidden; }
+    .slide-col.left { flex: 1; gap: 10px; }
+    .slide-col.right { width: 280px; flex-shrink: 0; gap: 8px; align-items: stretch; }
+    .reveal .slides section { overflow: hidden; }
 
     .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
     .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
@@ -75,23 +76,23 @@
     .tlbl { font-family: var(--bk-b); font-size: .58em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--bk-text-3); padding-top: 1px; }
     .tval { font-family: var(--bk-b); font-size: .75em; color: var(--bk-text-2); line-height: 1.55; }
 
-    /* Ad mock — primary (larger) */
-    .ad-mock { border: 1px solid var(--bk-border); border-radius: 12px; overflow: hidden; background: var(--bk-card-dark); display: flex; flex-direction: column; box-shadow: 0 4px 20px rgba(0,0,0,.3); }
-    .ad-mock.primary { width: 100%; max-width: 320px; align-self: center; }
-    .ad-mock.primary.r9-16 { aspect-ratio: 9 / 16; }
-    .ad-mock.primary.r1-1 { aspect-ratio: 1 / 1; }
-    .ad-mock.primary.r4-5 { aspect-ratio: 4 / 5; }
-    .ad-mock.variant { width: 100%; }
+    /* Ad mock — sized to fit slide height budget */
+    .ad-mock { border: 1px solid var(--bk-border); border-radius: 10px; overflow: hidden; background: var(--bk-card-dark); display: flex; flex-direction: column; box-shadow: 0 4px 18px rgba(0,0,0,.3); }
+    .ad-mock.primary { width: 100%; max-width: 220px; align-self: center; flex-shrink: 0; }
+    .ad-mock.primary.r9-16 { aspect-ratio: 9 / 16; max-height: 392px; }
+    .ad-mock.primary.r1-1 { aspect-ratio: 1 / 1; max-height: 220px; }
+    .ad-mock.primary.r4-5 { aspect-ratio: 4 / 5; max-height: 275px; }
+    .ad-mock.variant { width: 100%; flex-shrink: 0; }
     .ad-mock.variant.r9-16 { aspect-ratio: 9 / 16; }
     .ad-mock.variant.r1-1 { aspect-ratio: 1 / 1; }
     .ad-mock.variant.r4-5 { aspect-ratio: 4 / 5; }
-    .am-top { padding: 14px 12px; font-family: var(--bk-h); font-size: .64em; font-weight: 700; color: var(--bk-text); line-height: 1.3; }
-    .am-vis { flex: 1; min-height: 70px; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(160deg, #0a0a20 0%, var(--bk-card-dark) 100%); font-family: var(--bk-b); font-size: .6em; color: var(--bk-text-3); padding: 10px; line-height: 1.4; }
-    .am-bot { padding: 11px; background: var(--bk-card); }
-    .am-cta { border-radius: 10px; padding: 7px 11px; font-size: .6em; font-weight: 600; text-align: center; font-family: var(--bk-b); color: #fff; background: var(--bk-purple); }
-    .am-sub { font-family: var(--bk-b); font-size: .52em; color: var(--bk-text-3); margin-top: 4px; text-align: center; }
-    .ad-cap { font-family: var(--bk-b); font-size: .52em; color: var(--bk-text-3); text-align: center; margin-top: 2px; letter-spacing: .04em; }
-    .variant-row { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
+    .am-top { padding: 10px; font-family: var(--bk-h); font-size: .52em; font-weight: 700; color: var(--bk-text); line-height: 1.3; }
+    .am-vis { flex: 1; min-height: 50px; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(160deg, #0a0a20 0%, var(--bk-card-dark) 100%); font-family: var(--bk-b); font-size: .5em; color: var(--bk-text-3); padding: 8px; line-height: 1.4; }
+    .am-bot { padding: 8px; background: var(--bk-card); }
+    .am-cta { border-radius: 8px; padding: 5px 8px; font-size: .5em; font-weight: 600; text-align: center; font-family: var(--bk-b); color: #fff; background: var(--bk-purple); }
+    .am-sub { font-family: var(--bk-b); font-size: .42em; color: var(--bk-text-3); margin-top: 2px; text-align: center; }
+    .ad-cap { font-family: var(--bk-b); font-size: .46em; color: var(--bk-text-3); text-align: center; margin-top: 1px; letter-spacing: .04em; }
+    .variant-row { display: flex; gap: 8px; align-items: flex-start; }
     .variant-row > div { flex: 1; min-width: 0; }
 
     /* Storyboard strip on concept slides */
