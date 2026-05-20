@@ -159,6 +159,25 @@
     .legend-row { font-family: var(--bk-b); font-size: .58em; color: var(--bk-text-2); line-height: 1.5; margin-bottom: 2px; }
     .legend-row strong { color: var(--bk-text); font-weight: 600; }
 
+    /* Unified concept header — grid layout replacing scattered track bar + eyebrow + badges */
+    .c-head { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; padding: 8px 14px; border-radius: 7px; margin-bottom: 14px; }
+    .c-head.aspirational { background: rgba(79,200,61,.08); border-left: 3px solid var(--bk-success); }
+    .c-head.openlane { background: rgba(140,129,255,.1); border-left: 3px solid var(--bk-purple); }
+    .c-head.format { background: rgba(255,204,0,.08); border-left: 3px solid var(--bk-yellow); }
+    .c-head.premium { background: rgba(13,153,255,.08); border-left: 3px solid var(--bk-info); }
+    .c-head .ch-l { display: flex; align-items: center; gap: 7px; font-family: var(--bk-b); font-size: .66em; color: var(--bk-text-2); }
+    .c-head .ch-l .d { font-size: 1.3em; line-height: 1; }
+    .c-head .ch-l strong { font-weight: 700; }
+    .c-head .ch-r { font-family: var(--bk-b); font-size: .62em; color: var(--bk-text-3); display: flex; align-items: center; gap: 8px; }
+    .c-head .ch-r strong { color: var(--bk-text); font-weight: 600; }
+    .c-head .ch-r .sep { color: rgba(255,255,255,.2); }
+
+    /* Three-cell concept metadata row — Format / Platforms / Audience */
+    .c-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin: 8px 0 14px; background: var(--bk-border); border-radius: 8px; overflow: hidden; }
+    .c-meta-cell { display: flex; flex-direction: column; gap: 3px; padding: 9px 14px; background: var(--bk-card-dark); }
+    .c-meta-cell .l { font-family: var(--bk-b); font-size: .5em; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--bk-text-3); }
+    .c-meta-cell .v { font-family: var(--bk-b); font-size: .68em; color: var(--bk-text); font-weight: 500; line-height: 1.35; }
+
     /* Production note card — fills bottom of left col on static concept slides */
     .prod-note { margin-top: auto; padding: 12px 16px; background: var(--bk-card-dark); border: 1px solid var(--bk-border); border-radius: 10px; font-family: var(--bk-b); font-size: .68em; color: var(--bk-text-2); line-height: 1.55; }
     .prod-note .lbl { font-size: .82em; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--bk-purple); margin-bottom: 5px; display: block; }
@@ -413,15 +432,26 @@
 
 <!-- SLIDE 06 — Concept 01: Learning Has Changed v2 -->
 <section data-background-color="#141428">
-  <div class="track-header aspirational"><div class="track-name ok">Track 01 &nbsp;//&nbsp; Aspirational Loss-Aversion</div><div class="track-tag muted">Top performer extension</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow eyebrow-g">Concept 01 &nbsp;//&nbsp; <span class="muted" style="text-transform:none;font-weight:400;letter-spacing:.04em;">Top performer (May 13) — recommended lead</span></span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-static">Static + Motion variant</span><span class="badge badge-top">TOP MAY 13</span></div>
-        <h2>Learning Has Changed v2</h2>
+      <div class="c-head aspirational">
+        <div class="ch-l">
+          <span class="d ok">●</span>
+          <span><strong class="ok">Track 01</strong> &nbsp;·&nbsp; Aspirational Loss-Aversion</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 01</strong>
+          <span class="sep">·</span>
+          <span class="yellow">⚡ Top performer (May 13)</span>
+        </div>
       </div>
+      <h2>Learning Has Changed v2</h2>
       <div class="tagline-big">"Learning changed. You can keep up."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static + Motion variant</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Young Pro Customers</span></div>
+      </div>
       <div class="tbl">
         <span class="tlbl">Layout</span><span class="tval">Headline up top, Bookster summary preview center, microcopy below — <em>"Every successful idea you've had came from something you read. Then forgot."</em> Motion variant: 10s text fade-in over the same composition.</span>
         <span class="tlbl">Why</span><span class="tval">Direct extension of the only creative producing both installs and trial starts in May 13. Highest confidence concept in the set, recommended for the bulk of Young Pro spend.</span>
@@ -465,15 +495,26 @@
 
 <!-- SLIDE 07 — Concept 02: Knowledge That Sticks v2 -->
 <section data-background-color="#141428">
-  <div class="track-header aspirational"><div class="track-name ok">Track 01 &nbsp;//&nbsp; Aspirational Loss-Aversion</div><div class="track-tag muted">HISI trial-start extension</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow eyebrow-g">Concept 02 &nbsp;//&nbsp; HISI carousel</span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-static">Static + Carousel</span><div class="chips" style="margin:0;"><span class="chip">Meta Feed</span><span class="chip">IG Carousel</span><span class="chip">HISI</span></div></div>
-        <h2>Knowledge That Sticks v2</h2>
+      <div class="c-head aspirational">
+        <div class="ch-l">
+          <span class="d ok">●</span>
+          <span><strong class="ok">Track 01</strong> &nbsp;·&nbsp; Aspirational Loss-Aversion</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 02</strong>
+          <span class="sep">·</span>
+          <span>HISI trial-start extension</span>
+        </div>
       </div>
+      <h2>Knowledge That Sticks v2</h2>
       <div class="tagline-big">"Read less. Remember more."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static + Carousel</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · IG Carousel</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">HISI</span></div>
+      </div>
       <div class="tbl">
         <span class="tlbl">Carousel</span><span class="tval"><strong>1.</strong> "Read less. Remember more." + summary preview. <strong>2.</strong> Trivia feature — "Hit the trivia. Make it stick." <strong>3.</strong> "Two weeks later — actually remember." <strong>4.</strong> Comprehend · Remember · Apply.</span>
         <span class="tlbl">Why</span><span class="tval">"Knowledge That Sticks" was the only HISI creative with a recorded trial start in May 13. Reusing the proven line, giving it carousel scaffolding so HISI can sit with the idea instead of converting from a single-image hook.</span>
@@ -514,15 +555,26 @@
 
 <!-- SLIDE 08 — Concept 03: Turn Content Into Growth UGC -->
 <section data-background-color="#141428">
-  <div class="track-header aspirational"><div class="track-name ok">Track 01 &nbsp;//&nbsp; Aspirational Loss-Aversion</div><div class="track-tag muted">3.08% CTR Meta winner → UGC port</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow eyebrow-g">Concept 03 &nbsp;//&nbsp; UGC, full script</span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-ugc">30s UGC</span><div class="chips" style="margin:0;"><span class="chip">Meta</span><span class="chip">TikTok</span><span class="chip">Young Pro</span></div></div>
-        <h2>Turn Content Into Growth</h2>
+      <div class="c-head aspirational">
+        <div class="ch-l">
+          <span class="d ok">●</span>
+          <span><strong class="ok">Track 01</strong> &nbsp;·&nbsp; Aspirational Loss-Aversion</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 03</strong>
+          <span class="sep">·</span>
+          <span>3.08% CTR Meta winner → UGC port</span>
+        </div>
       </div>
+      <h2>Turn Content Into Growth</h2>
       <div class="tagline-big">"I read 30 books last quarter. My boss read 4."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">30s UGC video</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Young Pro Customers</span></div>
+      </div>
       <div class="script-blk">
         <span class="script-t">0:00–0:03</span><span class="script-l"><strong>Creator on camera, conversational, slight smirk:</strong> "I read 30 books last quarter. My boss read four."</span>
         <span class="script-t">0:03–0:09</span><span class="script-l"><strong>Hold on creator:</strong> "Same hours in the day. He's not lazy — he's just reading them the old way. A book a month, if he's lucky."</span>
@@ -552,15 +604,26 @@
 
 <!-- SLIDE 09 — Concept 04: Bookmark Trap -->
 <section data-background-color="#141428">
-  <div class="track-header openlane"><div class="track-name accent">Track 02 &nbsp;//&nbsp; Open Lane</div><div class="track-tag muted">No competitor using this angle</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow">Concept 04 &nbsp;//&nbsp; Behavior mirror</span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-static">Static + Motion graphic</span><div class="chips" style="margin:0;"><span class="chip">Meta</span><span class="chip">IG Reels</span><span class="chip">TikTok</span></div></div>
-        <h2>Bookmark Trap</h2>
+      <div class="c-head openlane">
+        <div class="ch-l">
+          <span class="d accent">●</span>
+          <span><strong class="accent">Track 02</strong> &nbsp;·&nbsp; Open Lane</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 04</strong>
+          <span class="sep">·</span>
+          <span>No competitor using this angle</span>
+        </div>
       </div>
+      <h2>Bookmark Trap</h2>
       <div class="tagline-big">"Your bookmarks are a graveyard."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static + Motion graphic</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · IG Reels · TikTok</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both</span></div>
+      </div>
       <div class="tbl">
         <span class="tlbl">Layout</span><span class="tval">Counter graphic: <strong class="yellow">SAVED 1,400</strong> over <strong class="bad">READ 4</strong>. Headline: "You've saved 1,400 things this year." Body: "There's a reason you feel like you're falling behind." Motion variant: 10s counter animation ending in Bookster reveal.</span>
         <span class="tlbl">Why</span><span class="tval">No competitor in the book-summary category is using this approach. Names the substitution behavior — bookmarking as a proxy for reading — before viewers can rationalize it. Smaller initial allocation given it's fresh; scale if engagement signal is strong.</span>
@@ -601,16 +664,27 @@
 
 <!-- SLIDE 10 — Concept 05: Insight-First Reveal -->
 <section data-background-color="#141428">
-  <div class="track-header openlane"><div class="track-name accent">Track 02 &nbsp;//&nbsp; Open Lane</div><div class="track-tag muted">Headway's blind spot — show the book</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow">Concept 05 &nbsp;//&nbsp; Insight first, app second</span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-static">Static + Motion variant</span><div class="chips" style="margin:0;"><span class="chip">Meta</span><span class="chip">TikTok</span><span class="chip">Apple Display</span></div></div>
-        <h2>Insight-First Reveal</h2>
+      <div class="c-head openlane">
+        <div class="ch-l">
+          <span class="d accent">●</span>
+          <span><strong class="accent">Track 02</strong> &nbsp;·&nbsp; Open Lane</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 05</strong>
+          <span class="sep">·</span>
+          <span>Headway's blind spot — show the book</span>
+        </div>
       </div>
+      <h2>Insight-First Reveal</h2>
       <div class="tagline-big">"Goals set direction.<br>Systems make progress."</div>
-      <p class="xs muted" style="margin-top:-4px;margin-bottom:6px;">— Atomic Habits, James Clear &nbsp;·&nbsp; <span class="accent bold">This whole book in 12 minutes</span></p>
+      <p class="xs muted" style="margin-top:-6px;margin-bottom:6px;">— Atomic Habits, James Clear &nbsp;·&nbsp; <span class="accent bold">This whole book in 12 minutes</span></p>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static + Motion variant</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok · Apple Display</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both</span></div>
+      </div>
       <div class="tbl">
         <span class="tlbl">Layout</span><span class="tval">Open with the book quote on screen — type-on animation, looks like editorial. Bookster timer "11:48" reveals it's a summary. Motion variant: 5 insights stack across 6 seconds, then pull back to the Bookster app. <em>"You just read the whole book."</em></span>
         <span class="tlbl">Variant pool</span><span class="tval">Rotate the featured book quarterly — Atomic Habits, Deep Work, Sapiens, Why We Sleep, The 7 Habits. Each variant teaches the algorithm a different reader intent.</span>
@@ -652,15 +726,26 @@
 
 <!-- SLIDE 11 — Concept 06: Stop Scrolling (in-house IRL) -->
 <section data-background-color="#141428">
-  <div class="track-header openlane"><div class="track-name accent">Track 02 &nbsp;//&nbsp; Open Lane</div><div class="track-tag muted">36N-produced, single shot, no creator cost</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow">Concept 06 &nbsp;//&nbsp; In-house IRL — clever struggle</span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-irl">30s IRL · in-house</span><div class="chips" style="margin:0;"><span class="chip">Meta</span><span class="chip">TikTok</span><span class="chip">Both</span></div></div>
-        <h2>Stop Scrolling</h2>
+      <div class="c-head openlane">
+        <div class="ch-l">
+          <span class="d accent">●</span>
+          <span><strong class="accent">Track 02</strong> &nbsp;·&nbsp; Open Lane</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 06</strong>
+          <span class="sep">·</span>
+          <span>In-house IRL — clever struggle</span>
+        </div>
       </div>
+      <h2>Stop Scrolling</h2>
       <div class="tagline-big">"Stop scrolling.<br>You know what you're doing."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">30s IRL video · in-house</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both</span></div>
+      </div>
       <div class="script-blk">
         <span class="script-t">0:00–0:03</span><span class="script-l"><strong>Direct address, phone-held camera, lived-in setting (couch, bed, kitchen):</strong> "Hey. Stop scrolling for a second."</span>
         <span class="script-t">0:03–0:09</span><span class="script-l"><strong>Same shot, slight pause:</strong> "You promised yourself you'd read more this year. It's May. Be honest about how many books you've actually finished."</span>
@@ -690,15 +775,26 @@
 
 <!-- SLIDE 12 — Concept 07: POV Reveal -->
 <section data-background-color="#141428">
-  <div class="track-header format"><div class="track-name yellow">Track 03 &nbsp;//&nbsp; TikTok-Native Format</div><div class="track-tag muted">POV reveal — 52.7M-view format precedent</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow eyebrow-y">Concept 07 &nbsp;//&nbsp; UGC, full script</span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-ugc">30s UGC</span><div class="chips" style="margin:0;"><span class="chip">TikTok</span><span class="chip">IG Reels</span><span class="chip">Young Pro</span></div></div>
-        <h2>POV Reveal</h2>
+      <div class="c-head format">
+        <div class="ch-l">
+          <span class="d yellow">●</span>
+          <span><strong class="yellow">Track 03</strong> &nbsp;·&nbsp; TikTok-Native Format</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 07</strong>
+          <span class="sep">·</span>
+          <span>POV reveal — 52.7M-view format precedent</span>
+        </div>
       </div>
+      <h2>POV Reveal</h2>
       <div class="tagline-big">"POV: You finally found the app that makes you actually read."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">30s UGC video</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">TikTok · IG Reels</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Young Pro Customers</span></div>
+      </div>
       <div class="script-blk">
         <span class="script-t">0:00–0:02</span><span class="script-l"><strong>Close-up creator face, off-camera glance, half-smile:</strong> "POV: You finally found the app that makes you actually read."</span>
         <span class="script-t">0:02–0:08</span><span class="script-l"><strong>Phone flip-up, app demo:</strong> "Atomic Habits. Done in 15. Deep Work. Done in 12. My Goodreads is finally not aspirational."</span>
@@ -726,15 +822,26 @@
 
 <!-- SLIDE 13 — Concept 08: 2am Address -->
 <section data-background-color="#141428">
-  <div class="track-header format"><div class="track-name yellow">Track 03 &nbsp;//&nbsp; TikTok-Native Format</div><div class="track-tag muted">Text-only motion graphic — no talent needed</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow eyebrow-y">Concept 08 &nbsp;//&nbsp; Text-only motion · budget hedge</span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-vid">15s motion graphic</span><div class="chips" style="margin:0;"><span class="chip">Meta</span><span class="chip">TikTok</span><span class="chip">Both</span></div></div>
-        <h2>2am Address</h2>
+      <div class="c-head format">
+        <div class="ch-l">
+          <span class="d yellow">●</span>
+          <span><strong class="yellow">Track 03</strong> &nbsp;·&nbsp; TikTok-Native Format</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 08</strong>
+          <span class="sep">·</span>
+          <span>Text-only motion · budget hedge</span>
+        </div>
       </div>
+      <h2>2am Address</h2>
       <div class="tagline-big">"The version of you that reads<br>starts tonight."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">15s motion graphic (no talent)</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta · TikTok</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Both</span></div>
+      </div>
       <div class="tbl">
         <span class="tlbl">Frame 1</span><span class="tval">Dark screen. Yellow Poppins 700 fades in: "It's 2am."</span>
         <span class="tlbl">Frame 2</span><span class="tval">Beat — text continues: "You've been scrolling for 47 minutes."</span>
@@ -764,15 +871,26 @@
 
 <!-- SLIDE 14 — Concept 09: Get Paid -->
 <section data-background-color="#141428">
-  <div class="track-header format"><div class="track-name yellow">Track 03 &nbsp;//&nbsp; TikTok-Native Format</div><div class="track-tag muted">Jan's gamification angle · track LTV separately</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow eyebrow-y">Concept 09 &nbsp;//&nbsp; UGC, full script · Jan's ask</span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-ugc">30s UGC</span><div class="chips" style="margin:0;"><span class="chip">TikTok</span><span class="chip">Meta Sec</span><span class="chip">Young Pro</span></div></div>
-        <h2>Get Paid</h2>
+      <div class="c-head format">
+        <div class="ch-l">
+          <span class="d yellow">●</span>
+          <span><strong class="yellow">Track 03</strong> &nbsp;·&nbsp; TikTok-Native Format</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 09</strong>
+          <span class="sep">·</span>
+          <span>Jan's gamification angle (track LTV separately)</span>
+        </div>
       </div>
+      <h2>Get Paid</h2>
       <div class="tagline-big">"Bookster paid me <span class="yellow">$47</span> last week to read books."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">30s UGC video</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">TikTok · Meta (secondary)</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">Young Pro Customers</span></div>
+      </div>
       <div class="script-blk">
         <span class="script-t">0:00–0:03</span><span class="script-l"><strong>Creator on camera, phone in hand, slight disbelief:</strong> "Bookster paid me $47 last week to read books."</span>
         <span class="script-t">0:03–0:09</span><span class="script-l"><strong>Phone screen — app store / app icon:</strong> "I didn't believe it either when my friend told me. So I downloaded it. Real money. Up to $100 a day."</span>
@@ -802,15 +920,26 @@
 
 <!-- SLIDE 15 — Concept 10: Premium-Intelligent (A+B) -->
 <section data-background-color="#141428">
-  <div class="track-header premium"><div class="track-name info">Track 04 &nbsp;//&nbsp; Premium-Intelligent</div><div class="track-tag muted">Blinkist retreat · two A/B executions</div></div>
   <div class="slide-row">
     <div class="slide-col left">
-      <div>
-        <span class="eyebrow eyebrow-i">Concept 10 &nbsp;//&nbsp; One concept, two executions</span>
-        <div style="display:flex;gap:6px;align-items:center;margin:2px 0;"><span class="badge badge-static">Static A/B</span><div class="chips" style="margin:0;"><span class="chip">Meta Feed</span><span class="chip">Apple Display</span><span class="chip">HISI</span></div></div>
-        <h2>Premium-Intelligent</h2>
+      <div class="c-head premium">
+        <div class="ch-l">
+          <span class="d info">●</span>
+          <span><strong class="info">Track 04</strong> &nbsp;·&nbsp; Premium-Intelligent</span>
+        </div>
+        <div class="ch-r">
+          <strong>Concept 10</strong>
+          <span class="sep">·</span>
+          <span>Blinkist retreat — two A/B executions</span>
+        </div>
       </div>
+      <h2>Premium-Intelligent</h2>
       <div class="tagline-big">"Smart people read smarter.<br>Now you can too."</div>
+      <div class="c-meta">
+        <div class="c-meta-cell"><span class="l">Format</span><span class="v">Static A/B executions</span></div>
+        <div class="c-meta-cell"><span class="l">Platforms</span><span class="v">Meta Feed · Apple Display</span></div>
+        <div class="c-meta-cell"><span class="l">Audience</span><span class="v">HISI</span></div>
+      </div>
       <p class="xs muted" style="margin-top:-2px;margin-bottom:6px;"><span class="info bold">Why now:</span> Blinkist has effectively stopped Meta ads in 2025. Their "intelligent companion for the curious mind" positioning lane is open. Bookster can claim it with two parallel executions to test what HISI responds to: premium positioning vs. anti-AI moat.</p>
       <div class="exec-split">
         <div class="exec-box">
