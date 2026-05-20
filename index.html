@@ -128,12 +128,12 @@
     .gate-n { font-family: var(--bk-b); font-size: .54em; font-weight: 700; color: var(--bk-purple); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
     .gate-q { font-family: var(--bk-b); font-size: .72em; font-weight: 600; color: var(--bk-text); line-height: 1.3; }
 
-    .stat-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-top: 10px; }
-    .stat { padding: 14px 10px; background: var(--bk-card); border: 1px solid var(--bk-border); border-radius: 10px; text-align: center; }
-    .stat-num { font-family: var(--bk-h); font-size: 1.6em; font-weight: 700; color: var(--bk-text); line-height: 1; margin-bottom: 4px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-top: 12px; }
+    .stat { padding: 28px 14px; background: var(--bk-card); border: 1px solid var(--bk-border); border-radius: 12px; text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+    .stat-num { font-family: var(--bk-h); font-size: 2em; font-weight: 700; color: var(--bk-text); line-height: 1; margin: 0; }
     .stat-num.y { color: var(--bk-yellow); } .stat-num.p { color: var(--bk-purple); } .stat-num.g { color: var(--bk-success); } .stat-num.r { color: var(--bk-error); }
-    .stat-lbl { font-family: var(--bk-b); font-size: .5em; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--bk-text-3); }
-    .stat-sub { font-family: var(--bk-b); font-size: .45em; color: var(--bk-text-3); margin-top: 2px; }
+    .stat-lbl { font-family: var(--bk-b); font-size: .56em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--bk-text-2); margin: 0; }
+    .stat-sub { font-family: var(--bk-b); font-size: .5em; color: var(--bk-text-3); margin: 0; line-height: 1.4; }
 
     .track-header { display: flex; align-items: center; gap: 8px; padding: 3px 10px; border-radius: 5px; margin-bottom: 2px; }
     .track-header.aspirational { background: rgba(79,200,61,.08); border-left: 3px solid var(--bk-success); }
@@ -158,6 +158,11 @@
     .legend-head { font-family: var(--bk-b); font-size: .55em; font-weight: 700; color: var(--bk-purple); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
     .legend-row { font-family: var(--bk-b); font-size: .58em; color: var(--bk-text-2); line-height: 1.5; margin-bottom: 2px; }
     .legend-row strong { color: var(--bk-text); font-weight: 600; }
+
+    /* Production note card — fills bottom of left col on static concept slides */
+    .prod-note { margin-top: auto; padding: 12px 16px; background: var(--bk-card-dark); border: 1px solid var(--bk-border); border-radius: 10px; font-family: var(--bk-b); font-size: .68em; color: var(--bk-text-2); line-height: 1.55; }
+    .prod-note .lbl { font-size: .82em; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--bk-purple); margin-bottom: 5px; display: block; }
+    .prod-note strong { color: var(--bk-text); font-weight: 600; }
 
     /* Premium A/B */
     .exec-split { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -193,7 +198,7 @@
       <div class="stat"><div class="stat-num p">$3.93</div><div class="stat-lbl">TikTok CPM (Young Pro)</div><div class="stat-sub">4× cheaper than Meta</div></div>
       <div class="stat"><div class="stat-num r">17</div><div class="stat-lbl">Apple Search installs</div><div class="stat-sub">on $224 spend · 15.12% click-to-install</div></div>
     </div>
-    <div class="g2" style="margin-top:14px;flex:1;">
+    <div class="g2" style="margin-top:14px;">
       <div class="card card-green">
         <div class="eyebrow eyebrow-g" style="margin-bottom:6px;">Top performer right now</div>
         <p style="font-size:.78em;color:var(--bk-text);font-weight:600;margin-bottom:6px;">"Learning Has Changed. You Can Keep Up."</p>
@@ -202,6 +207,29 @@
       <div class="card card-red">
         <div class="eyebrow" style="color:var(--bk-error);margin-bottom:6px;">What we cannot see yet</div>
         <p class="sm">iOS install data on Meta and TikTok is unreliable until Singular is removed from Meta Business Manager. The platform is routing attribution callbacks to a partner endpoint that's no longer responding, so the actual install volume is hidden. Recommendation: treat Meta and TikTok numbers as engagement and click efficiency only, not as conversion read, until Adjust escalates and Singular is cleared.</p>
+      </div>
+    </div>
+    <div class="g3" style="margin-top:14px;flex:1;align-items:stretch;">
+      <div class="card" style="display:flex;flex-direction:column;justify-content:space-between;">
+        <div>
+          <div class="eyebrow" style="margin-bottom:6px;">What we recommend this cycle</div>
+          <p class="sm">Bias <strong style="color:var(--bk-text);">70% of spend to Young Pro Customers</strong>. Extend "Learning Has Changed" as the lead creative. Layer in two whitespace concepts no competitor is using.</p>
+        </div>
+        <p class="xs muted" style="margin-top:8px;font-style:italic;">Track 01 leads spend at 50%.</p>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;justify-content:space-between;">
+        <div>
+          <div class="eyebrow eyebrow-g" style="margin-bottom:6px;">What we're scaling</div>
+          <p class="sm"><strong style="color:var(--bk-text);">Apple Search</strong> is our ground truth this cycle at $10.08 CPA on Young Pro — 5.7× better than the $75 target. Scale through keyword pruning, not budget alone.</p>
+        </div>
+        <p class="xs muted" style="margin-top:8px;font-style:italic;">17 installs on $224 spend.</p>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;justify-content:space-between;">
+        <div>
+          <div class="eyebrow eyebrow-y" style="margin-bottom:6px;">What we're unblocking</div>
+          <p class="sm"><strong style="color:var(--bk-text);">Singular removal from Meta BM</strong> is the unblock for trustworthy Meta + TikTok iOS data. Drew + Victor coordinating with Adjust escalation.</p>
+        </div>
+        <p class="xs muted" style="margin-top:8px;font-style:italic;">Once cleared, TikTok iOS budget unlocks.</p>
       </div>
     </div>
   </div>
@@ -213,7 +241,7 @@
   <h2>Four creative tracks for the next 14 days</h2>
   <div class="slide-body">
     <div class="g4" style="margin-top:12px;flex:1;align-items:stretch;height:100%;grid-auto-rows:1fr;">
-      <div class="card card-green" style="display:flex;flex-direction:column;height:100%;min-height:380px;">
+      <div class="card card-green" style="display:flex;flex-direction:column;height:100%;">
         <div class="eyebrow eyebrow-g">Track 01</div>
         <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">Aspirational Loss-Aversion</h3>
         <p class="xs" style="font-size:.62em;line-height:1.55;">Extends what's already working. "Learning Has Changed" plus two related angles. Highest confidence track for this cycle.</p>
@@ -234,7 +262,7 @@
           <div class="ok bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">50%</div>
         </div>
       </div>
-      <div class="card card-purple" style="display:flex;flex-direction:column;height:100%;min-height:380px;">
+      <div class="card card-purple" style="display:flex;flex-direction:column;height:100%;">
         <div class="eyebrow">Track 02</div>
         <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">Open Lanes</h3>
         <p class="xs" style="font-size:.62em;line-height:1.55;">Three places no competitor is currently playing. Headway never shows book content; bookmark-as-graveyard is novel; in-house "Stop Scrolling" replaces a higher-scope script.</p>
@@ -255,7 +283,7 @@
           <div class="accent bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">25%</div>
         </div>
       </div>
-      <div class="card card-yellow" style="display:flex;flex-direction:column;height:100%;min-height:380px;">
+      <div class="card card-yellow" style="display:flex;flex-direction:column;height:100%;">
         <div class="eyebrow eyebrow-y">Track 03</div>
         <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">TikTok-Native</h3>
         <p class="xs" style="font-size:.62em;line-height:1.55;">Built for the 21–34 second sweet spot. Includes a creator POV reveal, a low-cost text-only motion graphic, and a creator-led gamification piece.</p>
@@ -276,7 +304,7 @@
           <div class="yellow bold" style="font-family:var(--bk-h);font-size:1.5em;line-height:1.1;margin-top:2px;">20%</div>
         </div>
       </div>
-      <div class="card card-info" style="display:flex;flex-direction:column;height:100%;min-height:380px;">
+      <div class="card card-info" style="display:flex;flex-direction:column;height:100%;">
         <div class="eyebrow eyebrow-i">Track 04</div>
         <h3 style="font-size:1em;color:var(--bk-text);margin-bottom:8px;">Premium-Intelligent</h3>
         <p class="xs" style="font-size:.62em;line-height:1.55;">Blinkist has effectively stopped Meta ads. The "intelligent companion" lane they owned is open. One concept, two A/B executions to test positioning vs. anti-AI moat with HISI.</p>
@@ -402,6 +430,10 @@
         <span class="tlbl">CTA</span><span class="tval">Download free</span>
         <span class="tlbl">Why lead</span><span class="tval">Direct extension of the only creative producing both installs and trial starts. Highest confidence concept in the set, recommended for the bulk of Young Pro Meta + TikTok spend.</span>
       </div>
+      <div class="prod-note">
+        <span class="lbl">Production note</span>
+        Use the existing "Learning Has Changed" creative from the May 13 master deck as the starting point. <strong>Static</strong> is a 1-day Figma build. <strong>Motion variant</strong> is a 10-second After Effects animation layered over the same composition — same headline, same lockup, only the motion changes.
+      </div>
     </div>
     <div class="slide-col right">
       <div class="ad-mock primary r9-16">
@@ -452,6 +484,10 @@
         <span class="tlbl">Promise</span><span class="tval">"Comprehend. Remember. Apply. The model the other apps skip."</span>
         <span class="tlbl">CTA</span><span class="tval">Download free</span>
         <span class="tlbl">Why</span><span class="tval">"Knowledge That Sticks" was the only HISI creative with a recorded trial start in the May 13 read. Reusing the line that's proven, giving it carousel scaffolding so HISI can sit with the idea instead of being asked to convert from a single-image hook.</span>
+      </div>
+      <div class="prod-note">
+        <span class="lbl">Production note</span>
+        <strong>Carousel</strong> renders in Figma, 4 slides at 1080×1080. Export to Meta + IG. Reuse Bookster summary screenshots from the App Store listing — no new app-UI design needed. Single-day build.
       </div>
     </div>
     <div class="slide-col right">
@@ -539,6 +575,10 @@
         <span class="tlbl">CTA</span><span class="tval">Download free</span>
         <span class="tlbl">Why</span><span class="tval">No competitor in the book-summary category is currently using this approach. The angle names the substitution behavior — bookmarking as a proxy for reading — before the viewer can rationalize it. Smaller initial allocation given it's a fresh angle; scale if the engagement signal is strong.</span>
       </div>
+      <div class="prod-note">
+        <span class="lbl">Production note</span>
+        <strong>Motion graphic</strong> built in After Effects — counter animation + Bookster app reveal. Stock footage for the phone bookmark feed (~$30 from Storyblocks). 10-second loop, no creator, no shoot. <strong>Static</strong> exports from the same composition.
+      </div>
     </div>
     <div class="slide-col right">
       <div class="ad-mock primary r9-16">
@@ -587,6 +627,10 @@
         <span class="tlbl">Variant pool</span><span class="tval">Rotate the featured book each quarter — Atomic Habits, Deep Work, Sapiens, Why We Sleep, The 7 Habits. Each variant teaches the algorithm a different reader intent and builds book-discovery as a Bookster hook.</span>
         <span class="tlbl">CTA</span><span class="tval">"Get the whole book in 12 minutes"</span>
         <span class="tlbl">Why</span><span class="tval">Headway runs 50,000 ads per month and refuses to show actual book content. The category's loudest brand has left this lane open, and Bookster can claim it with concepts that lead with insight rather than abstraction.</span>
+      </div>
+      <div class="prod-note">
+        <span class="lbl">Production note</span>
+        Lock the <strong>Q1 book quote pool</strong> with Jan before production — Atomic Habits as Q1 hero. Type-on animation in After Effects, ~12 seconds end-to-end. Same template extends to Deep Work, Sapiens, etc. for quarterly refresh without rebuilding the visual system.
       </div>
     </div>
     <div class="slide-col right">
